@@ -1,35 +1,72 @@
 import React from "react";
+import Link from "next/link";
+import HeaderComponent from "./common/HeaderComponent";
 
 const StartPage: React.FC = () => {
   return (
     <>
       <div className="container">
-        <h3 className="name">
-          Kjetil Øverby ˚ <span className="portfolio">Portfolio </span>
-        </h3>
-        <p>
-          42 år, koder og programmerer på fritida. Jobber som sliper på Moelven
-          Våler.
-        </p>
+        <div>
+          <HeaderComponent adr="" />
+
+          <p>
+            42 år, koder og programmerer på fritida. Jobber som sliper på
+            Moelven Våler.
+          </p>
+          <div className="logo-main-container">
+            <div className="react-container">
+              <img
+                className="img"
+                src="https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png"
+                alt=""
+              />
+            </div>
+            <div className="logo-container">
+              <img
+                className="img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1280px-Node.js_logo.svg.png"
+                alt=""
+              />
+            </div>
+            <div className="logo-container">
+              <img
+                className="img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png"
+                alt=""
+              />
+            </div>
+            <div className="mongo-container">
+              <img
+                className="img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
         <h1 className="header mb">Mine hovedprosjekt</h1>
 
         <div>
-          <h2 className="mbs">Postarkiv</h2>
-          <div className="text-box">
-            <p>
-              Postarkiv er et verktøy som brukes til å regne ut utfylling for å
-              sentrere sagblader på en hylse. Prosjektet ble startet i 2016 på
-              excel regneark og har ettehvert utviklet seg til en webapplikasjon
-              med database.
-            </p>
-          </div>
-          <h4 className="btn">LES MER</h4>
-          <div className="img-container">
-            <img
-              className="img mt"
-              src="https://lh3.googleusercontent.com/pw/AL9nZEW2ocY1jlQq0inPXf5SzPuS1Ak8JAnlMywSKHKlNZgPBhoMfcEJGtX35xQ2oW9_x94zPkrtM2WEuI25LmCq2ZWYbJJ5_fBe0ZFTWdB55G28AZ1WRW5EW8BCDDBllTts2ECnVENEeOGcmunBzfili5wb=w800-h666-no?authuser=0"
-              alt="timber"
-            />
+          <div className="project-box">
+            <h2 className="mbs">Postarkiv</h2>
+            <div className="text-box">
+              <p>
+                Postarkiv er et verktøy som brukes til å regne ut utfylling for
+                å sentrere sagblader på en hylse. Prosjektet ble startet i 2016
+                på excel regneark og har ettehvert utviklet seg til en
+                webapplikasjon med database.
+              </p>
+            </div>
+            <Link href="postarkiv">
+              <h4 className="btn">LES MER</h4>
+            </Link>
+            <div className="img-container">
+              <img
+                className="img mt"
+                src="https://lh3.googleusercontent.com/pw/AL9nZEW2ocY1jlQq0inPXf5SzPuS1Ak8JAnlMywSKHKlNZgPBhoMfcEJGtX35xQ2oW9_x94zPkrtM2WEuI25LmCq2ZWYbJJ5_fBe0ZFTWdB55G28AZ1WRW5EW8BCDDBllTts2ECnVENEeOGcmunBzfili5wb=w800-h666-no?authuser=0"
+                alt="timber"
+              />
+            </div>
           </div>
         </div>
         <div className="project-box">
@@ -75,26 +112,35 @@ const StartPage: React.FC = () => {
           .btn {
             margin-top: 3rem;
           }
+          .btn:hover {
+            cursor: pointer;
+          }
           .header {
-            margin-top: 3rem;
-            font-weight: 300;
+            margin-top: 15rem;
+            font-weight: 100;
           }
           .img {
             width: 100%;
           }
           .img-container {
-            width: 30rem;
+            width: 20rem;
           }
-          .name {
-            color: grey;
-            margin-bottom: 5rem;
-            font-weight: 400;
+          .logo-container {
+            width: 5rem;
           }
-          .portfolio {
-            color: darkblue;
+          .react-container {
+            width: 6rem;
           }
+          .logo-main-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(8rem, 8rem));
+            margin-top: 1rem;
+          }
+
           .project-box {
             margin-top: 3rem;
+            background: white;
+            margin-bottom: 10rem;
           }
           .text-box {
           }
