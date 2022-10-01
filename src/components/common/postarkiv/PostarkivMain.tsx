@@ -30,7 +30,7 @@ const PostarkivMain: React.FC = () => {
           <div className="img-container">
             <img
               className="img"
-              src="https://lh3.googleusercontent.com/pw/AL9nZEWPTHbpOMe8bICWc2MNpeesl2jwHyXaLYWAo9l-XOeaU5-JTJfwGZ-6_8wQ5ZbLds9uVqO8GRG6JK8Dv-9qVdBSueBZ8cpixW3HVi1X3v1ettReaj8bAu0LD1XqG0C3kq6hXS4v8d8oN9lZZHqJUvjP=w1039-h627-no?authuser=0"
+              src="https://lh3.googleusercontent.com/pw/AL9nZEVtNOnOqhcaBHwkK4lfxl7VVk6xm-q7KJlkiKn7Zo02-P2GhZQM_Ebk-AdcG7HUaY7XnXhpVaXnBSVZ_mNAkq9b46kz65KGeeALbsoDzHOoigPs523N9JuazUHMmIGDrO6rDPHM2y52K_JTnf1D3PKS=w1039-h695-no?authuser=0"
               alt=""
             />
             <p className="img-text">
@@ -71,7 +71,7 @@ const PostarkivMain: React.FC = () => {
           }
           .last-text {
             margin-bottom: 10rem;
-            margin-top: 5rem;
+            margin-top: 10rem;
           }
         `}
       </style>
