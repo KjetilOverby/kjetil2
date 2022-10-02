@@ -10,32 +10,44 @@ const Appcards = ({ img, title, text }: CardProps) => {
   return (
     <>
       <div className="container">
-        <img
-          className="img"
-          src="https://lh3.googleusercontent.com/pw/AL9nZEV5Dj5Ae_ckIm7eaFFDa8U7Xl9ynJdNc5xp7bZDNJVqB0CT4WQ80Uo46k8MDdiyxVSL3I0SA-LA9Z5uX7i96lQ7mc_RWTav4K8xBkVLXyhCHr_AnwGdPzbPIQ2SIjt4MgsKL4XIxkyqdPNJ7EkS3r2h=w1686-h1024-no?authuser=0"
-          alt=""
-        />
+        <img className="img" src={img} alt="" />
         <div className="text-container">
-          <h3 className="header mb">Microsoft Access</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-            aliquam reprehenderit ut cum officia veritatis asperiores deleniti
-            nemo vitae repellat. Possimus quisquam architecto saepe esse
-            molestiae, in dignissimos vero est!
-          </p>
+          <h3 className="card-header mb">{title}</h3>
+          <p className="card-text">{text}</p>
+          <p className="btn">LES MER</p>
         </div>
       </div>
       <style jsx>
         {`
+          .btn {
+            margin-top: 2rem;
+            color: #537a94;
+          }
+          .btn:hover {
+            cursor: pointer;
+          }
+          .card-header {
+            color: #537a94;
+          }
+          .card-text {
+            color: grey;
+          }
           .container {
-            width: 20rem;
+            width: 16rem;
             background: #fff;
+            border-radius: 5px;
+            min-height: 25rem;
           }
           .img {
             width: 100%;
           }
           .text-container {
-            padding: 1rem;
+            padding: 0.5rem;
+          }
+          @media only screen and (max-width: 600px) {
+            .container {
+              width: 90vw;
+            }
           }
         `}
       </style>

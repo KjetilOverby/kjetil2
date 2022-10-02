@@ -73,6 +73,11 @@ const PostarkivMain: React.FC = () => {
             margin-bottom: 10rem;
             margin-top: 10rem;
           }
+          @media only screen and (max-width: 756px) {
+            .img-container {
+              width: 100%;
+            }
+          }
         `}
       </style>
     </>
