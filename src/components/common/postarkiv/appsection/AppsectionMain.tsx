@@ -8,8 +8,34 @@ const AppsectionMain: React.FC = () => {
       <div className="container">
         <MarginLayout>
           <div>
-            <h1 className="header">Apper</h1>
-            <p>Flere apper har blitt laget.</p>
+            <h1 className="header mb">Apper</h1>
+            <div className="text-imgcontainer">
+              <div>
+                <p>
+                  Jeg fant ut målene som jeg skulle bruke for å få mutterne helt
+                  jevne når posten dras til. Så jeg begynte med å regne manuellt
+                  for å finne utfyllingen bak. Dette ble tungvint hver gang vi
+                  skulle lage ny utfylling bak så jeg starter med å lage et
+                  utrgningsprogram i Microsoft Excel.
+                </p>
+                <br />
+                <p>
+                  På bildet ser man at en post er dratt til og at den siste
+                  mutteren flykter helt jevnt med hylsa. I og med at jeg har
+                  funnet et gitt mål av alle ringer og blader til sammen så vil
+                  den siste mutteren bli helt lik på alle varianter av uttak, og
+                  at posten da selvsagt havner i midten i saga.
+                </p>
+              </div>
+              <div>
+                <img
+                  className="img"
+                  src="https://lh3.googleusercontent.com/pw/AL9nZEWQ9tNUQethMFxI6l7__A6yY0NV09pJCNNHOad8oCa_oBoWPgX6O3yCbexjJkd71km_uHHAx9kStPeYR3uVBM087YWVptOEnRIuYd1XxLbU_-9uEimfbGZv20vXgBmolOTbw9kONZMl8pDYjE5WGE82=w1440-h1080-no?authuser=0"
+                  alt=""
+                />
+              </div>
+            </div>
+            <h1 className="header mt mb">Programmer og appliakasjoner</h1>
             <div className="appcards-container">
               <Appcards
                 img="https://lh3.googleusercontent.com/pw/AL9nZEV5Dj5Ae_ckIm7eaFFDa8U7Xl9ynJdNc5xp7bZDNJVqB0CT4WQ80Uo46k8MDdiyxVSL3I0SA-LA9Z5uX7i96lQ7mc_RWTav4K8xBkVLXyhCHr_AnwGdPzbPIQ2SIjt4MgsKL4XIxkyqdPNJ7EkS3r2h=w1686-h1024-no?authuser=0"
@@ -52,9 +78,27 @@ const AppsectionMain: React.FC = () => {
           .container {
             background: #ebebeb;
             padding-bottom: 10rem;
-            margin-bottom: 10rem;
+            margin-bottom: 0rem;
           }
+          .img {
+              width: 100%
+          }
+          .text-imgcontainer {
+              display: grid;
+              grid-template-columns: 25rem 1fr;
+              grid-gap: 5rem
+          }
+          @media only screen and (max-width: 756px) {
+
+          .appcards-container {
+            grid-template-columns: 1fr;
           
+           
+          }
+          .text-imgcontainer {
+            grid-template-columns: 1fr;
+          }
+
         `}
       </style>
     </>

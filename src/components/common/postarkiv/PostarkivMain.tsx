@@ -9,35 +9,42 @@ const PostarkivMain: React.FC = () => {
         <div className="content-container">
           <h1 className="header">Postarkiv</h1>
           <h3 className="subheader mt mb">Hva gjør dette programmet?</h3>
-          <p>
-            Posten i denne sammenhengen skal dele opp en stokk til planker. På
-            illustrasjonen under ser vi 5 planker og 4 sidebord. Posten skal
-            dele opp plankene. Eksemplet i illustrasjonen kan være 5x50x200.
-            Sidebordene på over og undersiden er allerede sagd av når de kommer
-            til denne posten.
-          </p>
-          <div className="img-deling-container">
-            <img
-              className="img"
-              src="https://lh3.googleusercontent.com/pw/AL9nZEWBqTfqaAIOQeZNn37ojtHD5GF-Jrp3cPLwsP_ZsH33n6rDHyZNCa3ufQs0GBv5Cd_DmhJBzVPsigCXOr681hgoz3Q_tNSfkvbVnaVUT_Bw-MFkD9Cr8O13oa91UznNy33Uh_kh4HRLfLkGHvi_PX9c=s791-no?authuser=0"
-              alt=""
-            />
+          <div className="column2">
+            <div>
+              <p>
+                Posten i denne sammenhengen skal dele opp en stokk til planker.
+                På illustrasjonen under ser vi 5 planker og 4 sidebord. Posten
+                skal dele opp plankene. Eksemplet i illustrasjonen kan være
+                5x50x200. Sidebordene på over og undersiden er allerede sagd av
+                når de kommer til denne posten.
+              </p>
+              <div className="img-deling-container">
+                <img
+                  className="img"
+                  src="https://lh3.googleusercontent.com/pw/AL9nZEWBqTfqaAIOQeZNn37ojtHD5GF-Jrp3cPLwsP_ZsH33n6rDHyZNCa3ufQs0GBv5Cd_DmhJBzVPsigCXOr681hgoz3Q_tNSfkvbVnaVUT_Bw-MFkD9Cr8O13oa91UznNy33Uh_kh4HRLfLkGHvi_PX9c=s791-no?authuser=0"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div>
+              <img
+                className="img"
+                src="https://lh3.googleusercontent.com/pw/AL9nZEV9u4VLP5w997IVRtH6r5YCD6A8IrprNXmBCRQrNLe-jObuIWeHAMgkkaCUAhFq6nTWAmYVRQkp8uycwxo_KxeVObvEOmSQzCMP5GY7Mcdm6L8fxso1TRpL9jTq3bZJ3emLmTZYSeRVFoVbkYjdap60=w1440-h1080-no?authuser=0"
+                alt=""
+              />
+              <p className="img-text">
+                Her er en post som sitter i saga. Saga har 2 akslinger med 2
+                identiske poster på. Bladene sager hver sin halvdel igjennom
+                blokka.
+              </p>
+            </div>
           </div>
-          <p className="mt">
+
+          <p className="mt illtext">
             på illustrasjonen under ser man hvordan posten skal bygges hvis det
-            er 5x50.
+            er 5x50. Her må man dele opp utfyllingen foran og bak med
+            distanseringer vi har tilgjengelig.
           </p>
-          <div className="img-container">
-            <img
-              className="img"
-              src="https://lh3.googleusercontent.com/pw/AL9nZEVtNOnOqhcaBHwkK4lfxl7VVk6xm-q7KJlkiKn7Zo02-P2GhZQM_Ebk-AdcG7HUaY7XnXhpVaXnBSVZ_mNAkq9b46kz65KGeeALbsoDzHOoigPs523N9JuazUHMmIGDrO6rDPHM2y52K_JTnf1D3PKS=w1039-h695-no?authuser=0"
-              alt=""
-            />
-            <p className="img-text">
-              Her ser man en 5x50 post. Her må man dele opp utfyllingen foran og
-              bak med distanseringer vi har tilgjengelig.
-            </p>
-          </div>
           <p className="last-text">
             På postningene som ble laget på det originale programmet regner kun
             ut utfyllingen foran for det er den som bestemmer at posten kommer i
@@ -48,34 +55,68 @@ const PostarkivMain: React.FC = () => {
             igjen. Da er det lett å se at posten inneholder feil for da vil
             mutterne stikke innen eller utenfor hylsa.
           </p>
+          <div className="img-container">
+            <img
+              className="img"
+              src="https://lh3.googleusercontent.com/pw/AL9nZEWZiBgr69Idt4vPjUE9YaQqadhdCiAbWPOYulOZGIJiQZl6-TweZbjGEoV2WMh8tHXV9bpTxMwFucaGcVsMHd9UqYH70qgcPr8xf2wrQVB7gDMYOQfWOxCP5CYvELr8WKNFWCPnGN2SVixmIO_sjGtb=w1170-h729-no?authuser=0"
+              alt=""
+            />
+          </div>
         </div>
       </div>
       <style jsx>
         {`
+          .column2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 5rem;
+          }
           .container {
           }
           .content-container {
           }
           .subheader {
           }
+
           .img {
             width: 100%;
           }
           .img-container {
             width: 45rem;
-            margin-top: 5rem;
+            margin-top: 3rem;
+            margin-bottom: 5rem;
           }
           .img-deling-container {
             width: 15rem;
             margin-top: 3rem;
+            margin-bottom: 5rem;
           }
           .last-text {
             margin-bottom: 10rem;
-            margin-top: 10rem;
+            margin-top: 1rem;
+          }
+          @media only screen and (min-width: 2100px) {
+            .img-container {
+              margin-top: 10rem;
+              width: 55rem;
+            }
+            .illtext {
+              margin-top: 5rem;
+            }
           }
           @media only screen and (max-width: 756px) {
             .img-container {
               width: 100%;
+            }
+            .column2 {
+              grid-template-columns: 1fr;
+              grid-gap: 5rem;
+            }
+            .img-deling-container {
+              margin-bottom: 0rem;
+            }
+            .last-text {
+              margin-bottom: 1rem;
             }
           }
         `}
