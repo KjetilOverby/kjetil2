@@ -48,7 +48,12 @@ const Appdescription = () => {
                 å lage Postkalkulatoren som en app. Jeg ender til slutt opp med
                 Javascript og webutvikling. Med mye prøving og feiling så ender
                 jeg til slutt opp med en webapp som fungerer 8 februar 2020 tar
-                webappen over for Excel systemet.
+                webappen over for Excel systemet. Men denne appen har ingen
+                tilkobling til en database så man kan ikke lagre postene man
+                lager i programmet. Jeg må lage postene i kildekoden og
+                publisere nettsiden på nytt hver gang jeg lager nye poster. Den
+                er heller ikke responsiv slik at appen er helt ubrukelig på
+                mobil.
               </p>
               <img
                 className="img"
@@ -56,6 +61,71 @@ const Appdescription = () => {
                 alt=""
               />
             </div>
+          </div>
+          {/* NEW SECTION */}
+          <div>
+            <h1 className="header section-header">Database</h1>
+            <div className="text-imgcontainer3">
+              <div>
+                <p>
+                  Jeg begynner etterhvert å lage postkalkulatoren på nytt helt
+                  fra scratch. Denne gangen skal appen være responsiv og ha en
+                  database så man kan lagre postenen man lager i appen. Jeg
+                  bruker Node js og Express for backend programmeringen. Appen
+                  får på plass en database fra Mongo DB og kan nå lagre og
+                  slette filer i appen. Jeg legger også til inlogging sånn at
+                  ikke hvem som helst som går inn på appen kan få tilgang til å
+                  slette eller manipulere data. Jeg bruker Auth0 til denne
+                  jobben istedet for å lage eget innloggingsystem. Jeg har også
+                  gjort appen responsiv sånn at det går an å bruke den på
+                  mobiler.
+                </p>
+              </div>
+              <div>
+                <img
+                  className="img"
+                  src="https://lh3.googleusercontent.com/pw/AL9nZEUSreYKfGu0ilQebpG8eJb9hN2Y5o8K0Yk-A6jFWpuBlLKlT0HQrbvB8nY5ERTYutqT5AcQQNbRQufDeMPdsos5DTnsJH2oFnMkAFh1LqJIPWQFYE-gQ15-IdiLAg4T4UFpvfI_fBrHLf6ZmUmjkn__=w1920-h1080-no?authuser=0"
+                  alt=""
+                />
+                <p className="img-text">
+                  På bildet kan man se at man kan lage en post og lagre den. Men
+                  det er lagt inn noen valiederinger som f.eks at man må få
+                  utfyllingene i 0 med en toleranse på +- 0,05mm og da vil
+                  utfyllingstallet bli grønt. Når en av utfyllingstallene er
+                  røde så vil det ikke være mulig å lagre posten.
+                </p>
+              </div>
+            </div>
+            <div className="text-imgcontainer3 mt">
+              <div>
+                <img
+                  className="img"
+                  src="https://lh3.googleusercontent.com/pw/AL9nZEW4eNrcV7T6qsgrN06c-_Zy0KU26svbIX9bOUIardKNKZNC9mo0Y3pgYSYgIgCp7e6wHCqGE9_LOafN5DDspRj65mbjkbOAsNmJ8f-Uo_4OD4IbRMnFb2suHoy13bl8JtwKkP8J1Vp8Z9kYRuVd48tr=w1920-h1080-no?authuser=0"
+                  alt=""
+                />
+                <p className="img-text">
+                  Her er forsiden på den nye appen, her kan man søke etter
+                  poster som denne gangen ligger lagret på en av Mongo DBs
+                  servere og ikke i selve kildekoden.
+                </p>
+              </div>
+              <div>
+                <img
+                  className="img"
+                  src="https://lh3.googleusercontent.com/pw/AL9nZEUQvhnGmB8KlUQpQZuVGp93R7W3GDvu4Pk9kpQGcpnNBMvGhxrY78dZcZ5A8BSSkOW2emvdKkt66lXZTkX5tTTI5MhrHJzc2LEWc9ATuyTwM4WwZQBwDVkoc95BXr19A087YSY9wtIWIrv2JKCEErcr=w1920-h1080-no?authuser=0"
+                  alt=""
+                />
+                <p className="img-text">
+                  På bildet så er de blå ringene utfyllingsringer og de gule er
+                  det som blir til plank. Verdiene som står øverst på bladet er
+                  sagsnittet og nederst er bladstammetykkelsen. Verdien med den
+                  blå skriften mellom bladene er det som er råmålet på
+                  planktykkelsen. Det nominelle målet står i overskriften øverst
+                  til venstre(38). Alle mål er i mm.
+                </p>
+              </div>
+            </div>
+            <h1 className="header section-header">Skurliste</h1>
           </div>
         </div>
       </MarginLayout>
