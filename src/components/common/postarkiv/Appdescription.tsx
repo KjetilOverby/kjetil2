@@ -42,7 +42,7 @@ const Appdescription = () => {
           {/* NEW SECTION */}
           <div>
             <h1 className="header section-header">Postkalkulator web app</h1>
-            <div className="text-imgcontainer3">
+            <div className="text-imgcontainer">
               <p>
                 I 2018 så begynner jeg å lære meg å programmere. Jeg drømmer om
                 å lage Postkalkulatoren som en app. Jeg ender til slutt opp med
@@ -65,7 +65,7 @@ const Appdescription = () => {
           {/* NEW SECTION */}
           <div>
             <h1 className="header section-header">Database</h1>
-            <div className="text-imgcontainer3">
+            <div className="text-imgcontainer">
               <div>
                 <p>
                   Jeg begynner etterhvert å lage postkalkulatoren på nytt helt
@@ -96,7 +96,7 @@ const Appdescription = () => {
                 </p>
               </div>
             </div>
-            <div className="text-imgcontainer3 mt">
+            <div className="text-imgcontainer3">
               <div>
                 <img
                   className="img"
@@ -125,7 +125,99 @@ const Appdescription = () => {
                 </p>
               </div>
             </div>
-            <h1 className="header section-header">Skurliste</h1>
+            <h1 className="header section-header">Postarkiv (skurliste)</h1>
+
+            <div className="text-container">
+              <img
+                className="img"
+                src="https://postarkiv.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fimage%2Fassets%2Finfo%2Ffourth.e3bab3ec6cc4c0f14c65abfc7757114a.png&w=2048&q=75"
+                alt=""
+              />
+              <p>
+                Jeg hadde lenge tenkt å lage et system der man bare kan klikke
+                rett i ordreplanene å få opp kun de postenen som hører til
+                uttaket. Da slipper man også å søke etter hvilken post man skal
+                ha. Så jeg startet å lage en app der man kan legge inn
+                skurplanen. Meningen først var at det skulle bare være en enkel
+                app der vi bare kan legge inn skurlister og velge post fra
+                lista. Men jeg utvidet senere appen til å kunne lage nye poster
+                og lagre nye. Så det blir en fullstendig redesign og en app som
+                erstatte den forrige appen.
+              </p>
+            </div>
+            <div className="text-imgcontainer3 mt margins">
+              <div>
+                <img
+                  className="img"
+                  src="https://lh3.googleusercontent.com/pw/AL9nZEXtdeHOiMraTIrDioqj5yRUPHiZy2Q6jVuOBjZ1_nFlL-qx8al5JfOr85xFROB7evJC4AorEO708XoodrrQFtKlfg0TyOpCd9-4RU9WTFK1t1O5ytkcgpOWPbBNnoNnpxqsOZSkVg1fAQI2tetpaQix=w800-h450-no?authuser=0"
+                  alt=""
+                />
+                <p className="img-text">
+                  Her ser man et bilde av at man lager en ny post. Til høyre på
+                  bildet ser man ringene som vi har å velge mellom. Her kan man
+                  ikke skrive inn egne verdier men kun velge verdier som vi har
+                  på ringene.
+                </p>
+              </div>
+              <div>
+                <img
+                  className="img"
+                  src="https://lh3.googleusercontent.com/pw/AL9nZEWoBtvW8rwIuszdOtBZe8UhRkw7wwOboXHQmT8-NxOfA1aSefCw0iYGocfrcEKyG9f3rINQhQn_dZ3IQ6Xm6UnYnavFpbqrxT9Dn_7I5mWsqRKehSMN8kzY5JpNln6fdTpIFq0sYbTivW5bgWzTXabb=w800-h450-no?authuser=0"
+                  alt=""
+                />
+                <p className="img-text">
+                  Her ser man posten som skal bygges, nederst til venstre ser
+                  man detaljer på den posten som man har funnet fram. Denne
+                  informasjonen kommer kun når man velger fra skurlista og ikke
+                  når man søker manuelt.
+                </p>
+              </div>
+            </div>
+            <h1 className="header mb">Gammelt system</h1>
+            <div className="text-imgcontainer">
+              <div>
+                <p className="mb">
+                  Systemet som ble brukt før jeg lagde programmet var utskrifter
+                  på papir som ble sortert i permer. På utskriftene så får man
+                  bare utregning på utfyllingen foran som vist på bildet under.
+                  Uten å vite utregning foran så må man bare finne ringer som
+                  fyller ut til man får skrudd til posten. Siste mutteren havner
+                  ikke alltid på samme sted da. Dette var en av hovedårsakene
+                  til at jeg begynte å lage en slik app.
+                </p>
+                <img
+                  className="img"
+                  src="https://lh3.googleusercontent.com/pw/AL9nZEVKR1q699EebVexRupJDwqKVfhb2Klm4UNjRL_NdXNHdSJUUF254xBcC2avdRdpCGxnqizCoIPGrS9rEUeyT78GQNkDuMWfUp8xfwMuCUyGuOr8G0CpdQYi73gKwWt1PVW8Ied3D3TJFODpZMUEH7KN=w706-h430-no?authuser=0"
+                  alt=""
+                />
+                <p className="img-text">Utsnitt av en utskrift</p>
+              </div>
+              <img
+                className="img"
+                src="https://lh3.googleusercontent.com/pw/AL9nZEUO5Dy5QLVDFi7Prk1vloRnhP8SkZqZuDRkz5bEe5a3FvNt6d-bodDxhkY-Esi0q3u4BaPiSkvEPNCjxhgzoFgepKO2W8Yv5ocv422tWVr8ahOgUw3ZqbXGTMnR8ENzkeoO7F4nPKcQ2Ib2NMbUc8En=w1440-h1080-no?authuser=0"
+                alt=""
+              />
+            </div>
+            <div className="text-imgcontainer mt margins">
+              <p>
+                En annen fordel med appen er at man kan søke etter poster
+                istedetfor å bla seg gjennom mange ark i permer. Der du noen
+                ganger kan stå flere minutter å lete etter en post som heller
+                kanskje ikke har blitt laget før og ikke eksisterer. På
+                programmet så tar det kun sekunder å finne en post eller finne
+                ut at man må lage en ny. Nå man måtte ha en ny post før så måtte
+                man gå opp til saghuset og be om en utskrift også dette var
+                tungvint og tok litt tid. Nå lager man bare den nye posten i
+                programmet uten og måtte forholde seg til noen andre. og med
+                ferdige utregninger og at man bare klikker på ringverdier så er
+                det også mye enklere å finne hvilke ringer man skal bruke.
+              </p>
+              <img
+                className="img"
+                src="https://lh3.googleusercontent.com/pw/AL9nZEW14KGzkcvcoWyqZAmAP5pWEJPPBNwDzJ0GBpDNsfeWA05dVVqbysOrXczcuewmBkiNPR6IMR4xlDTgFLUYFspLkThv4C0SZilMCSZIsYTr7wJQA-ULgD8weK5EZUYAVa7p-yM-CkNFa3EsMTkYyfZy=w800-h600-no?authuser=0"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </MarginLayout>
@@ -135,7 +227,7 @@ const Appdescription = () => {
           }
           .text-imgcontainer {
             display: grid;
-            grid-template-columns: 20rem 1fr;
+            grid-template-columns: 25rem 1fr;
             grid-gap: 3rem;
           }
           .img-textcontainer2 {
@@ -149,7 +241,17 @@ const Appdescription = () => {
           display: grid;
             grid-template-columns: 1fr 1fr;
             grid-gap: 3rem;
+            margin-top: 8rem
         }
+        .text-container {
+           margin-bottom: 8rem
+        }
+
+        .margins {
+          margin-bottom: 5rem
+        }
+       
+        
           @media only screen and (max-width: 756px) {
 
 

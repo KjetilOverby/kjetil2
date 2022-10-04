@@ -1,4 +1,5 @@
 import React from "react";
+import FooterComponent from "../src/components/common/FooterComponent";
 import MarginLayout from "../src/components/common/MarginLayout";
 import Appdescription from "../src/components/common/postarkiv/Appdescription";
 import AppsectionMain from "../src/components/common/postarkiv/appsection/AppsectionMain";
@@ -13,6 +14,7 @@ const postarkiv: React.FC = () => {
       <AppsectionMain />
 
       <Appdescription />
+      <FooterComponent />
       <style jsx>
         {`
           .container {

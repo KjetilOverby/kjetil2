@@ -16,7 +16,9 @@ const PostarkivMain: React.FC = () => {
                 På illustrasjonen under ser vi 5 planker og 4 sidebord. Posten
                 skal dele opp plankene. Eksemplet i illustrasjonen kan være
                 5x50x200. Sidebordene på over og undersiden er allerede sagd av
-                når de kommer til denne posten.
+                når de kommer til denne posten. Posten bygges opp med ringer og
+                blader på en hylse som gjør at det blir et fast uttak. Skal man
+                ha andre dimensjoner så må posten byttes med en ny.
               </p>
               <div className="img-deling-container">
                 <img
@@ -58,7 +60,7 @@ const PostarkivMain: React.FC = () => {
           <div className="img-container">
             <img
               className="img"
-              src="https://lh3.googleusercontent.com/pw/AL9nZEWZiBgr69Idt4vPjUE9YaQqadhdCiAbWPOYulOZGIJiQZl6-TweZbjGEoV2WMh8tHXV9bpTxMwFucaGcVsMHd9UqYH70qgcPr8xf2wrQVB7gDMYOQfWOxCP5CYvELr8WKNFWCPnGN2SVixmIO_sjGtb=w1170-h729-no?authuser=0"
+              src="https://lh3.googleusercontent.com/pw/AL9nZEXo1AUULPvoNxwU1a1KNUlxMVPgOS12u1mAYxDbu6AYwdt2MBpmt_XAgmYqXSyOc9BkU_5zqvx41Dtu5BpAS7ScPxOn2b4NQWvocuYh7MVxLvzAHfSOKqAOVhq0HOZcYnejt9Wl55BqDKRKErrN-b6U=w1170-h729-no?authuser=0"
               alt=""
             />
           </div>
@@ -102,6 +104,9 @@ const PostarkivMain: React.FC = () => {
             }
             .illtext {
               margin-top: 5rem;
+            }
+            .img-deling-container {
+              width: 25rem;
             }
           }
           @media only screen and (max-width: 756px) {

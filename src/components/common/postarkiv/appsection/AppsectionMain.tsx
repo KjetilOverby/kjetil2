@@ -35,7 +35,9 @@ const AppsectionMain: React.FC = () => {
                 />
               </div>
             </div>
-            <h1 className="header mt mb">Programmer og appliakasjoner</h1>
+            <h1 className="header pro-app-header">
+              Programmer og appliakasjoner
+            </h1>
             <div className="appcards-container">
               <Appcards
                 img="https://lh3.googleusercontent.com/pw/AL9nZEV5Dj5Ae_ckIm7eaFFDa8U7Xl9ynJdNc5xp7bZDNJVqB0CT4WQ80Uo46k8MDdiyxVSL3I0SA-LA9Z5uX7i96lQ7mc_RWTav4K8xBkVLXyhCHr_AnwGdPzbPIQ2SIjt4MgsKL4XIxkyqdPNJ7EkS3r2h=w1686-h1024-no?authuser=0"
@@ -69,7 +71,7 @@ const AppsectionMain: React.FC = () => {
       <style jsx>
         {`
           .appcards-container {
-            margin-top: 5rem;
+            margin-top: 8rem;
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)));
             grid-gap: 5rem;
@@ -77,11 +79,14 @@ const AppsectionMain: React.FC = () => {
           }
           .container {
             background: #ebebeb;
-            padding-bottom: 10rem;
+            padding-bottom: 15rem;
             margin-bottom: 0rem;
           }
           .img {
               width: 100%
+          }
+          .pro-app-header {
+            margin-top: 8rem;
           }
           .text-imgcontainer {
               display: grid;
