@@ -147,6 +147,7 @@ const Section1 = () => {
             alt=""
           />
         </Column2Layout>
+        <h1 className="header mb">Verktøyregister</h1>
       </div>
       <style jsx>
         {`

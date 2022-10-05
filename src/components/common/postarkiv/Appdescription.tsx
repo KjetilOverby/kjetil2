@@ -5,7 +5,7 @@ const Appdescription = () => {
   return (
     <>
       <MarginLayout>
-        <div>
+        <div className="content-margins">
           <div>
             <h1 className="header mb">Microsoft Excel</h1>
             <div className="text-imgcontainer">
@@ -219,6 +219,7 @@ const Appdescription = () => {
               />
             </div>
           </div>
+        
         </div>
       </MarginLayout>
       <style jsx>

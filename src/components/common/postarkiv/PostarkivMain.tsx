@@ -6,7 +6,7 @@ const PostarkivMain: React.FC = () => {
     <>
       <div className="container">
         <HeaderComponent adr="Postarkiv" />
-        <div className="content-container">
+        <div className="content-container  content-margins">
           <h1 className="header">Postarkiv</h1>
           <h3 className="subheader mt mb">Hva gjør dette programmet?</h3>
           <div className="column2">
@@ -84,17 +84,16 @@ const PostarkivMain: React.FC = () => {
             width: 100%;
           }
           .img-container {
-            width: 45rem;
             margin-top: 3rem;
             margin-bottom: 5rem;
           }
           .img-deling-container {
-            width: 15rem;
+            width: 10rem;
             margin-top: 3rem;
             margin-bottom: 5rem;
           }
           .last-text {
-            margin-bottom: 10rem;
+            margin-bottom: 5rem;
             margin-top: 1rem;
           }
           @media only screen and (min-width: 2100px) {
