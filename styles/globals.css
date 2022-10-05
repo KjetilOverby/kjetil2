@@ -32,6 +32,12 @@ a {
 .mt {
   margin-top: 1.5rem;
 }
+.mbl {
+  margin-bottom: 4rem;
+}
+.mtl {
+  margin-top: 3rem;
+}
 .pb {
   padding-bottom: 1.5rem;
 }
@@ -48,7 +54,7 @@ h6 {
   margin: 0;
 }
 p {
-  color: rgb(38, 89, 112);
+  color: rgb(67, 70, 71);
 }
 .header {
   font-weight: 100;
@@ -60,4 +66,23 @@ p {
 .img-text {
   color: grey;
   font-style: italic;
+}
+.content-margins {
+  margin: 0 15rem;
+}
+
+@media only screen and (max-width: 2100px) {
+  .content-margins {
+    margin: 0 10rem;
+  }
+}
+@media only screen and (max-width: 1800px) {
+  .content-margins {
+    margin: 0 5rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .content-margins {
+    margin: 0 0;
+  }
 }

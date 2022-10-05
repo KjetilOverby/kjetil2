@@ -1,19 +1,19 @@
 import React from "react";
-import { GrMail } from 'react-icons/gr';
-import { FaPhoneAlt } from 'react-icons/fa';
-import { BsGithub } from 'react-icons/bs';
-import { AiFillFacebook } from 'react-icons/ai';
+import { GrMail } from "react-icons/gr";
+import { FaPhoneAlt } from "react-icons/fa";
+import { BsGithub } from "react-icons/bs";
+import { AiFillFacebook } from "react-icons/ai";
 
 interface data {
-  title: string
+  title: string;
 }
 
 interface DataProps {
-  data: data[]
+  data: data[];
+  header: string;
 }
 
-
-const FooterComponent:React.FC<DataProps> = ({data}) => {
+const FooterComponent: React.FC<DataProps> = ({ header, data }) => {
   return (
     <>
       <div className="container">
@@ -21,27 +21,58 @@ const FooterComponent:React.FC<DataProps> = ({data}) => {
           <div>
             <h3 className="footer-header">Kjetil Øverby • Portfolio</h3>
             <div className="icon-text-container">
-            <FaPhoneAlt style={{verticalAlign: 'middle', color: 'lightgrey', marginRight: '.5rem', fontSize: '.9rem', marginTop: '.2rem'}} />
-            <p className="footer-text"> 97541236</p>
+              <FaPhoneAlt
+                style={{
+                  verticalAlign: "middle",
+                  color: "lightgrey",
+                  marginRight: ".5rem",
+                  fontSize: ".9rem",
+                  marginTop: ".2rem",
+                }}
+              />
+              <p className="footer-text"> 97541236</p>
             </div>
             <div className="icon-text-container">
-            <GrMail style={{ color: 'lightgrey', marginRight: '.5rem', fontSize: '1.1rem', marginTop: '.2rem'}}/>
-            <p className="footer-text"> ktldesign80@gmail.com</p>
+              <GrMail
+                style={{
+                  color: "lightgrey",
+                  marginRight: ".5rem",
+                  fontSize: "1.1rem",
+                  marginTop: ".2rem",
+                }}
+              />
+              <p className="footer-text"> ktldesign80@gmail.com</p>
             </div>
             <div className="icon-text-container">
-            <BsGithub style={{ color: 'lightgrey', marginRight: '.5rem', fontSize: '1.1rem', marginTop: '.1rem'}}/>
-            <p className="footer-text"> Github</p>
+              <BsGithub
+                style={{
+                  color: "lightgrey",
+                  marginRight: ".5rem",
+                  fontSize: "1.1rem",
+                  marginTop: ".1rem",
+                }}
+              />
+              <p className="footer-text"> Github</p>
             </div>
             <div className="icon-text-container">
-            <AiFillFacebook style={{ color: 'lightgrey', marginRight: '.5rem', fontSize: '1.1rem', marginTop: '.1rem'}}/>
-            <p className="footer-text"> Facebook</p>
+              <AiFillFacebook
+                style={{
+                  color: "lightgrey",
+                  marginRight: ".5rem",
+                  fontSize: "1.1rem",
+                  marginTop: ".1rem",
+                }}
+              />
+              <p className="footer-text"> Facebook</p>
             </div>
           </div>
 
           <div>
-            <h3 className="footer-header">Postarkiv 2016-2022</h3>
-          
-            {data.map((item => <p className="footer-text">{item.title}</p>))}
+            <h3 className="footer-header">{header}</h3>
+
+            {data.map((item) => (
+              <p className="footer-text">{item.title}</p>
+            ))}
           </div>
         </div>
       </div>
@@ -58,8 +89,7 @@ const FooterComponent:React.FC<DataProps> = ({data}) => {
           }
           .icon-text-container {
             display: flex;
-            vertical-align: 'middle';
-         
+            vertical-align: "middle";
           }
           .footer-header {
             text-transform: uppercase;
