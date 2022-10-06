@@ -3,17 +3,17 @@ import Link from "next/link";
 
 interface Props {
   title: string;
-  func: HTMLButtonElement;
-  ml: string;
-  type: string;
-  link: string;
-  bg: string;
-  bgh: string;
-  color: string;
-  colorh: string;
-  bc: string;
+  func?: HTMLButtonElement;
+  ml?: string;
+  type?: string;
+  link?: string;
+  bg?: string;
+  bgh?: string;
+  color?: string;
+  colorh?: string;
+  bc?: string;
+  onClick?: () => void;
 }
-
 const ButtonComponent: React.FC<Props> = ({
   title,
   func,
@@ -28,11 +28,11 @@ const ButtonComponent: React.FC<Props> = ({
 }) => {
   return (
     <>
-      {!link && (
+      {/* {!link && (
         <button onClick={func} className={`container ${type} `}>
           {title}
         </button>
-      )}
+      )} */}
       {link && (
         <Link href={`${link}`}>
           <button className={`container ${type} `}>{title}</button>

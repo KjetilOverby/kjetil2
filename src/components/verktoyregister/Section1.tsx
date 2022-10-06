@@ -19,14 +19,12 @@ const Section1 = () => {
         <Column2Layout>
           <img
             className="img"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUB25Oc2baBhS1pLfTL7heUgLttZqOt2y_Zzr71FkkoX2-JXFAqi-5vGFZB1y-qQYs_CA&usqp=CAU"
+            src="https://lh3.googleusercontent.com/pw/AL9nZEUR6kXtpxhQNrH2L4yRvapPhMzUdRoPySX9YpCeFlYx8iMWiRlgY0BLBjNDYnIn4h4s200HCcOeEduKxVJaq_hUYsGiaUGFiXYXcJXgTRbLbzQssRmmugySkojwNFHVWvTq3bQs1krNpELD-QBHG2a1=w800-h600-no?authuser=0"
             alt=""
           />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Reprehenderit saepe veniam ratione ex doloribus voluptates,
-            doloremque esse iste in similique magni nesciunt iusto autem,
-            debitis at mollitia inventore veritatis maxime.
+            Bladet blir slipt mange ganger til det ikke er igjen noe av
+            hardmetallklossen. Da byttes den gamle klossen med en ny en.
           </p>
         </Column2Layout>
         <Column2Layout>

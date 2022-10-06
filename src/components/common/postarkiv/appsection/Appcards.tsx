@@ -1,12 +1,14 @@
 import React from "react";
+import ButtonComponent from "../../ButtonComponent";
 
 interface CardProps {
   img: string;
   title: string;
   text: string;
+  link?: string;
 }
 
-const Appcards = ({ img, title, text }: CardProps) => {
+const Appcards = ({ img, title, text, link }: CardProps) => {
   return (
     <>
       <div className="container">
@@ -15,6 +17,7 @@ const Appcards = ({ img, title, text }: CardProps) => {
           <h3 className="card-header mb">{title}</h3>
           <p className="card-text">{text}</p>
           <p className="btn">LES MER</p>
+          {link && <ButtonComponent title="Til nettsiden" link={link} />}
         </div>
       </div>
       <style jsx>
@@ -28,15 +31,15 @@ const Appcards = ({ img, title, text }: CardProps) => {
           }
           .card-header {
             color: #537a94;
+            font-weight: 100;
           }
           .card-text {
             color: grey;
           }
           .container {
-            width: 16rem;
             background: #fff;
             border-radius: 5px;
-            min-height: 25rem;
+            min-height: 30rem;
           }
           .img {
             width: 100%;

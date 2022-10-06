@@ -102,6 +102,13 @@ const FooterComponent: React.FC<DataProps> = ({ header, data }) => {
             margin-bottom: 0.5rem;
             font-weight: 100;
           }
+          @media only screen and (max-width: 800px) {
+            .content-container {
+              grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
+              grid-gap: 5rem;
+              margin: 0;
+            }
+          }
         `}
       </style>
     </>

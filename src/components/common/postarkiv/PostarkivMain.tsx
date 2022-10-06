@@ -26,6 +26,7 @@ const PostarkivMain: React.FC = () => {
                   src="https://lh3.googleusercontent.com/pw/AL9nZEWBqTfqaAIOQeZNn37ojtHD5GF-Jrp3cPLwsP_ZsH33n6rDHyZNCa3ufQs0GBv5Cd_DmhJBzVPsigCXOr681hgoz3Q_tNSfkvbVnaVUT_Bw-MFkD9Cr8O13oa91UznNy33Uh_kh4HRLfLkGHvi_PX9c=s791-no?authuser=0"
                   alt=""
                 />
+                <p className="img-text">Eksempel på deling av en stokk.</p>
               </div>
             </div>
             <div>
@@ -105,7 +106,7 @@ const PostarkivMain: React.FC = () => {
               margin-top: 5rem;
             }
             .img-deling-container {
-              width: 25rem;
+              width: 10rem;
             }
           }
           @media only screen and (max-width: 756px) {

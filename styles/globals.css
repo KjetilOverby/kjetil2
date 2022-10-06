@@ -83,6 +83,6 @@ p {
 }
 @media only screen and (max-width: 1000px) {
   .content-margins {
-    margin: 0 0;
+    margin: 0;
   }
 }
