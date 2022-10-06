@@ -146,7 +146,24 @@ const Section1 = () => {
           />
         </Column2Layout>
         <h1 className="header mb">Verktøyregister</h1>
+        <Column2Layout>
+        <div>
+
+        <p>Sagbladregister som jeg har laget tidligere, tar kun for seg sagbladene som sendes til omlodding og har et eget id nummer. Men Det er også flere bladtyper som ikke omloddes, men brukes kun til de er utslitt og kastes. Det er også en del annet verktøy som kniver og segmenter. Ikke noe av dette blir omloddet men kastet etter at de er brukt opp.</p>
+        <br />
+        <p>I sagbladregister registreres hvert enkelt blad med et id nummer, dette gjør at antallet sagblad teller seg selv. Med forøvrig verktøy så blir det annerledes da det ikke trenger å ha egne id nummere men registrers i antall. Da blir det et helt annet system enn sagbladregister, der hver type verktøy må oppdateres med antall til eller fra. Man sletter altså ikke noe fra databasen sånn som man gjør i sagbladregister. Det ender med at jeg begynner å lage en ny app.</p>
+        </div>
+        <div>
+        <img className="img" src="https://www.scosarg.com/media/catalog/product/cache/6dda6a31c48d00a0af5e13b7c591c85b/f/o/foctr550.jpg" alt="" />
+<p className="img-text">Her ser man en side med oversikt over noe av verktøyet med bilder. Noe som gjør det enklere å redigere data på riktig verktøy, spesielt for noen som er ganske ferske i jobben.</p>
+        </div>
+        </Column2Layout>
+       <img className="img" src="https://www.upmtimber.com/contentassets/1d23d7352bf5467cac09a3a5f4a23bd8/korkeakoski-sawmill-aerial.jpg?preset=main-image" alt="" />
+       <p className="img-text">På bildet over kan man søke etter bladene som har egen id nummer. Der man kan legge til en omlodding, kommentar eller slette bladet. Bladene som slettes eller lagt til en omlodding blir satt i listen til venstre. De sorteres etter måneder og man kan klikke på rød pil for å gå måneder tilbake å se hvilke blader som ble vraket eller omloddet i den aktuelle måneden.</p>
       </div>
+
+      <h1 className="header mb mtl">Verktøyregister 2</h1>
+      <p>Jeg begynner enda en gang med verktøyregister. Denne gangen er det et helt nytt design med menyer på venstre side på appen.</p>
       <style jsx>
         {`
           .container {
