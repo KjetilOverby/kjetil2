@@ -4,7 +4,7 @@ import Section1 from "./Section1";
 const VerktoyregisterMain = () => {
   return (
     <>
-      <div className="content-margins">
+      <div>
         <Section1 />
       </div>
       <style jsx>

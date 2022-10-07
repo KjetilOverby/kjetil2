@@ -6,7 +6,22 @@ const prosjekterdata: { title: string }[] = [
     title: "Sagbladregister (webapp) 2020",
   },
   {
-    title: "",
+    title: "Sagbladregister React Native",
+  },
+  {
+    title: "Sagbladregister (oppgradering) 2021",
+  },
+  {
+    title: "Sagbladoversikt 2021",
+  },
+  {
+    title: "Sagbladregister 2 2021",
+  },
+  {
+    title: "Verktøyregister 2021",
+  },
+  {
+    title: "Verktøyregister 2 2022",
   },
 ];
 

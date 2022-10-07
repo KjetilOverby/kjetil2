@@ -9,11 +9,10 @@ const verktoyregister = () => {
   return (
     <>
       <MarginLayout>
-        <div>
-          <HeaderComponent adr="Verktøyregister" />
-          <VerktoyregisterMain />
-        </div>
+        <HeaderComponent adr="Verktøyregister" />
       </MarginLayout>
+      <VerktoyregisterMain />
+
       <FooterComponent header="Vertøyregister" data={verktoydata} />
       <style jsx>
         {`
