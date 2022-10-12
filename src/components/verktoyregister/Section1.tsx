@@ -2,6 +2,9 @@ import React from "react";
 import Column2Layout from "../common/Column2Layout";
 import MarginLayout from "../common/MarginLayout";
 import AppsectionTools from "./AppsectionTools";
+import Image from 'next/image'
+
+
 
 const Section1 = () => {
   return (
@@ -23,8 +26,8 @@ const Section1 = () => {
             </p>
             <Column2Layout>
               <img
-                className="img"
-                src="https://lh3.googleusercontent.com/pw/AL9nZEUR6kXtpxhQNrH2L4yRvapPhMzUdRoPySX9YpCeFlYx8iMWiRlgY0BLBjNDYnIn4h4s200HCcOeEduKxVJaq_hUYsGiaUGFiXYXcJXgTRbLbzQssRmmugySkojwNFHVWvTq3bQs1krNpELD-QBHG2a1=w800-h600-no?authuser=0"
+              className="img"
+                src='https://lh3.googleusercontent.com/pw/AL9nZEUR6kXtpxhQNrH2L4yRvapPhMzUdRoPySX9YpCeFlYx8iMWiRlgY0BLBjNDYnIn4h4s200HCcOeEduKxVJaq_hUYsGiaUGFiXYXcJXgTRbLbzQssRmmugySkojwNFHVWvTq3bQs1krNpELD-QBHG2a1=w800-h600-no?authuser=0'
                 alt=""
               />
               <p>
