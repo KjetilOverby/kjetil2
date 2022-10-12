@@ -6,9 +6,12 @@ interface CardProps {
   title: string;
   text: string;
   link?: string;
+  id?: string;
 }
 
-const Appcards = ({ img, title, text, link }: CardProps) => {
+const Appcards = ({ img, title, text, link, id }: CardProps) => {
+ 
+  
   return (
     <>
       <div className="container">
@@ -16,7 +19,10 @@ const Appcards = ({ img, title, text, link }: CardProps) => {
         <div className="text-container">
           <h3 className="card-header mb">{title}</h3>
           <p className="card-text">{text}</p>
-          <p className="btn">LES MER</p>
+          <div>
+
+          <a href={id} className="btn">LES MER</a>
+          </div>
           {link && <ButtonComponent title="Til nettsiden" link={link} />}
         </div>
       </div>

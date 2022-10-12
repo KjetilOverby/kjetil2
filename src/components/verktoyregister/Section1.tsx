@@ -53,6 +53,7 @@ const Section1 = () => {
         <AppsectionTools />
         <MarginLayout>
           <div className="content-margins">
+            <div id='access'>
             <h1 className="header mb">Microsoft Access</h1>
             <p className="mb">
               Jeg forsøkte å lage et system i Microsoft Excel, men jeg ville ha
@@ -93,7 +94,10 @@ const Section1 = () => {
                 src="https://lh3.googleusercontent.com/pw/AL9nZEU5QSAKDMUZ4hLG_VMua7OXc1tsuyVE1gFLITSScMK_yg6Zoa25nIeu-65KEBdRkQ4ffHI8W70ARhuLZDlBYHJid_KWasRII01xYX3VdU6G1Sn2TRmSU0tYluJN1HqhZL_W6CbHLNLeNOV58tp6x_Vt=w1824-h1080-no?authuser=0"
                 alt=""
               />
+              
             </Column2Layout>
+            </div>
+            <div id='webapplikasjon'>
             <h1 className="header mb">Webapplikasjon</h1>
             <p className="mbl">
               Mai 2020 starter prosjektet med å lage en webapplikasjon for
@@ -127,6 +131,8 @@ const Section1 = () => {
                 alt=""
               />
             </Column2Layout>
+            </div>
+            <div id='mobil'>
             <h1 className="header mb">Mobil App</h1>
             <p className="mb">
               Jeg har også drevet litt med React Native der man kan lage Native
@@ -144,6 +150,8 @@ const Section1 = () => {
               src="https://lh3.googleusercontent.com/pw/AL9nZEWp3pEGCghZiQMQx4wr8FFcpPZio8MTu5yp55YzKy3jq0hkv9a1Lb2ONKEGmYlh1JHIji0fJ_fVro_AVKJWHWcrns2okWcuO3QM01OZ0QYpa5Fp4Wjye43KbuNY-neiGkg3KrMtJYPXg4difTPxM83i=w1920-h921-no?authuser=0"
               alt=""
             />
+            </div>
+            <div id='oppgradering'>
             <h1 className="header mb">Oppgradering</h1>
             <Column2Layout>
               <p>
@@ -171,6 +179,8 @@ const Section1 = () => {
                 alt=""
               />
             </Column2Layout>
+            </div>
+            <div id='sagbladoversikt'>
             <h1 className="header mb">Sagbladoversikt</h1>
             <div>
               <p>
@@ -228,6 +238,8 @@ const Section1 = () => {
                 i en oversiktlig kalender.
               </p>
             </div>
+            </div>
+          <div id="sagbladregister2">
             <h1 className="header mb mtl">Sagbladregister 2</h1>
             <p className="mb">
               En ny versjon blir laget med helt nytt design og nye teknologier
@@ -237,6 +249,10 @@ const Section1 = () => {
               src="https://lh3.googleusercontent.com/pw/AL9nZEVlgcKwKqXc_BZ894cwj-drRVrVUSwznhFqjy3TBm-H7zSgM-1IjJzYyq_6NT_zIC0WLBJVDz957mFVUmqhcwI6Gb3k-pmtcxwfnVd_M-YefR0PFXXRZTXXQeDvSHZRzinYm_Pqg7vh0XXM8BBdgapX=w800-h450-no?authuser=0"
               alt=""
             />
+            </div>
+            <div id="verktoyregister">
+
+            
             <h1 className="header mb mtl">Verktøyregister</h1>
             <Column2Layout>
               <div>
@@ -286,7 +302,8 @@ const Section1 = () => {
               pil for å gå måneder tilbake å se hvilke blader som ble vraket
               eller omloddet i den aktuelle måneden.
             </p>
-
+            </div>
+            <div id="verktoyregister2">
             <h1 className="header mb mtl">Verktøyregister 2</h1>
             <p className="mb">
               Jeg begynner enda en gang med verktøyregister. Denne gangen er det
@@ -311,6 +328,7 @@ const Section1 = () => {
                 alt=""
               />
             </Column2Layout>
+            </div>
           </div>
         </MarginLayout>
       </div>

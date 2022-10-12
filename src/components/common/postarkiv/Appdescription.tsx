@@ -6,7 +6,7 @@ const Appdescription = () => {
     <>
       <MarginLayout>
         <div className="content-margins">
-          <div>
+          <div id='excel'>
             <h1 className="header mb">Microsoft Excel</h1>
             <div className="text-imgcontainer">
               <p>
@@ -40,7 +40,7 @@ const Appdescription = () => {
             </div>
           </div>
           {/* NEW SECTION */}
-          <div>
+          <div id='postkalkulator'>
             <h1 className="header section-header">Postkalkulator web app</h1>
             <div className="text-imgcontainer">
               <p>
@@ -63,7 +63,7 @@ const Appdescription = () => {
             </div>
           </div>
           {/* NEW SECTION */}
-          <div>
+          <div id='postarkiv'>
             <h1 className="header section-header">Database</h1>
             <div className="text-imgcontainer">
               <div>
@@ -125,6 +125,8 @@ const Appdescription = () => {
                 </p>
               </div>
             </div>
+            </div>
+            <div id='postarkiv2'>
             <h1 className="header section-header">Postarkiv (skurliste)</h1>
 
             <div className="text-container">
