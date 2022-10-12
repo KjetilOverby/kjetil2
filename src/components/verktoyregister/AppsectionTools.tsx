@@ -16,6 +16,7 @@ const AppsectionTools = () => {
                 text="lorem ipsum"
                 link=""
               />
+              
               <Appcards
                 title="Sagbladregister"
                 img="https://lh3.googleusercontent.com/pw/AL9nZEWCENEKNjxIO1g6sohDOtM5gjNwnCrSUJJRxvorZDrQ9IgA737Hhi1e1o19OIJi_TDsnhF6QOUxWB_p6cC9ZeeJGXjkIOzO2CHCc17vET86Uk_37KBRq0qnLQ0gtcJtLGmFqIhYFNYm65hQhzDDoFPJ=w1920-h1080-no?authuser=0"
@@ -74,7 +75,8 @@ const AppsectionTools = () => {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)));
             grid-gap: 5rem;
-            place-items: center
+            place-items: center;
+            color: green
           }
         `}
       </style>

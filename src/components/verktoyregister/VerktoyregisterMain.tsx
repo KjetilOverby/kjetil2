@@ -10,6 +10,7 @@ const VerktoyregisterMain = () => {
       <style jsx>
         {`
           .container {
+            
           }
         `}
       </style>
