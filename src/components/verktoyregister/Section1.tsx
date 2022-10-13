@@ -4,7 +4,11 @@ import MarginLayout from "../common/MarginLayout";
 import AppsectionTools from "./AppsectionTools";
 import Image from 'next/image'
 
+const retipImg = 'https://lh3.googleusercontent.com/pw/AL9nZEUR6kXtpxhQNrH2L4yRvapPhMzUdRoPySX9YpCeFlYx8iMWiRlgY0BLBjNDYnIn4h4s200HCcOeEduKxVJaq_hUYsGiaUGFiXYXcJXgTRbLbzQssRmmugySkojwNFHVWvTq3bQs1krNpELD-QBHG2a1=w800-h600-no?authuser=0'
+const sawbladeImg='https://lh3.googleusercontent.com/pw/AL9nZEXUnH60jfOkubwRcJz2Y1rlKfLOfGPvuf3sLoaWgzlv8iWEMOC8plw0XnW0_2E4ffQf8e14KkoQoa5hzv2EixsZMS_vuRBQ6qri-kY1PqmeXIN_S_cKAJsIZvuVsHfHoYYMHGhrvIA3AlrMhA0fEe0P=w1440-h1080-no?authuser=0'
+const access = 'https://lh3.googleusercontent.com/pw/AL9nZEU-yzM9i9ftSMtPQSdECmV3yNe9WYJ3Af5NKe5q4w-Rh1kKt1tAd7X9CiMuGQw4KfWHwZdtVTjzABvwI1_d6WsWPZ76Qd1hjg1C4tzR07OqsVOlqeqmsapGI5XdxQoilqDWVUi9zDIkWzo0iet5HVYq=w1824-h1080-no?authuser=0'
 
+const sagbladregister2Img ='https://lh3.googleusercontent.com/pw/AL9nZEVlgcKwKqXc_BZ894cwj-drRVrVUSwznhFqjy3TBm-H7zSgM-1IjJzYyq_6NT_zIC0WLBJVDz957mFVUmqhcwI6Gb3k-pmtcxwfnVd_M-YefR0PFXXRZTXXQeDvSHZRzinYm_Pqg7vh0XXM8BBdgapX=w800-h450-no?authuser=0'
 
 const Section1 = () => {
   return (
@@ -25,9 +29,12 @@ const Section1 = () => {
               og når de ble omloddet.
             </p>
             <Column2Layout>
-              <img
-              className="img"
-                src='https://lh3.googleusercontent.com/pw/AL9nZEUR6kXtpxhQNrH2L4yRvapPhMzUdRoPySX9YpCeFlYx8iMWiRlgY0BLBjNDYnIn4h4s200HCcOeEduKxVJaq_hUYsGiaUGFiXYXcJXgTRbLbzQssRmmugySkojwNFHVWvTq3bQs1krNpELD-QBHG2a1=w800-h600-no?authuser=0'
+              <Image
+                layout='responsive'
+                height='45'
+                width='60'
+                loader={() => retipImg}
+                src={retipImg}
                 alt=""
               />
               <p>
@@ -45,9 +52,12 @@ const Section1 = () => {
                 på bildet ser man at det er et id nummer som starter på 8J. Vi
                 bruker da 8J pluss de fire siste sifrene, altså 8J00102
               </p>
-              <img
-                className="img"
-                src="https://lh3.googleusercontent.com/pw/AL9nZEXUnH60jfOkubwRcJz2Y1rlKfLOfGPvuf3sLoaWgzlv8iWEMOC8plw0XnW0_2E4ffQf8e14KkoQoa5hzv2EixsZMS_vuRBQ6qri-kY1PqmeXIN_S_cKAJsIZvuVsHfHoYYMHGhrvIA3AlrMhA0fEe0P=w1440-h1080-no?authuser=0"
+              <Image
+                layout='responsive'
+                height='45'
+                width='60'
+                loader={() => sawbladeImg}
+                src={sawbladeImg}
                 alt=""
               />
             </Column2Layout>
@@ -78,11 +88,14 @@ const Section1 = () => {
               endte med at vi bare registrerte antall omloddinger, for det måtte
               vi ha. Og statistikken ble skrotet.
             </p>
-            <img
-              className="img"
-              src="https://lh3.googleusercontent.com/pw/AL9nZEU-yzM9i9ftSMtPQSdECmV3yNe9WYJ3Af5NKe5q4w-Rh1kKt1tAd7X9CiMuGQw4KfWHwZdtVTjzABvwI1_d6WsWPZ76Qd1hjg1C4tzR07OqsVOlqeqmsapGI5XdxQoilqDWVUi9zDIkWzo0iet5HVYq=w1824-h1080-no?authuser=0"
-              alt=""
-            />
+            <Image
+                layout='responsive'
+                height='45'
+                width='70'
+                loader={() => access}
+                src={access}
+                alt=""
+              />
             <p className="img-text mb">
               Her er et skjermbilde av hvordan forsiden så ut på Access appen.
             </p>
@@ -248,10 +261,15 @@ const Section1 = () => {
               En ny versjon blir laget med helt nytt design og nye teknologier
               på backend testes ut.
             </p>
-            <img
-              src="https://lh3.googleusercontent.com/pw/AL9nZEVlgcKwKqXc_BZ894cwj-drRVrVUSwznhFqjy3TBm-H7zSgM-1IjJzYyq_6NT_zIC0WLBJVDz957mFVUmqhcwI6Gb3k-pmtcxwfnVd_M-YefR0PFXXRZTXXQeDvSHZRzinYm_Pqg7vh0XXM8BBdgapX=w800-h450-no?authuser=0"
-              alt=""
-            />
+            <Image
+                layout='responsive'
+                height='40'
+                width='70'
+                objectFit="contain"
+                loader={() => sagbladregister2Img}
+                src={sagbladregister2Img}
+                alt=""
+              />
             </div>
             <div id="verktoyregister">
 
@@ -315,6 +333,7 @@ const Section1 = () => {
               uoversiktlig. Så jeg prøver meg enda en gang med en ny app.
             </p>
             <img
+            
               className="img mb"
               src="https://lh3.googleusercontent.com/pw/AL9nZEWMuV6nxbfV2xhP6Vpg9P_-UBlSSh0i8C2xV9BIjJevm-thX_wRhvU_1k6ZjCJb0L2JJ8ExXfegpcweqL3RmgWdz0sTQtKvhywYD16s1MAd09fiPAVZ0llK4RwtDBNhtBc1Uon6G5JUCx5ECr8D-QqS=w800-h450-no?authuser=0"
               alt=""
