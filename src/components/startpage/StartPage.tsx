@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import HeaderComponent from "./common/HeaderComponent";
+import HeaderComponent from "../common/HeaderComponent";
+import Projectcards from "./Projectcards";
 
 const StartPage: React.FC = () => {
   return (
@@ -47,7 +48,10 @@ const StartPage: React.FC = () => {
         <hr
           style={{ borderBottom: 0, borderColor: "grey", marginTop: "5rem" }}
         />
-        <div className="content-margins">
+
+<Projectcards />
+
+       {/*  <div className="content-margins">
           <h1 className="header mb">Mine hovedprosjekt</h1>
 
           <div>
@@ -110,7 +114,7 @@ const StartPage: React.FC = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <style jsx>
         {`

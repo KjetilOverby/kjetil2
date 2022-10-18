@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import FooterComponent from "../src/components/common/FooterComponent";
 import MarginLayout from "../src/components/common/MarginLayout";
-import StartPage from "../src/components/StartPage";
+import StartPage from "../src/components/startpage/StartPage";
 import styles from "../styles/Home.module.css";
 import prosjektdata from "../src/data/prosjekterdata";
 
