@@ -48,8 +48,16 @@ const StartPage: React.FC = () => {
         <hr
           style={{ borderBottom: 0, borderColor: "grey", marginTop: "5rem" }}
         />
+        <h1 className="header">PROSJEKTER</h1>
+<div className="card-container">
 
-<Projectcards />
+<Projectcards header='POSTARKIV' text='Lorem ipsum' link='/postarkiv' imgUrl='https://media.istockphoto.com/photos/pile-of-boards-in-a-warehouse-stacked-wooden-beams-of-rectangular-picture-id1198231366?k=20&m=1198231366&s=612x612&w=0&h=Pp__P0ETveSTW64mU0fYvHcqEYBvGYp-SFonGtCpWWI='/>
+<Projectcards header='VERKTØYREGISTER' text='lorem ipsum' link='/verktoyregister' imgUrl='https://media.istockphoto.com/photos/coarse-teeth-of-carbidetipped-saw-blades-for-closeup-cutting-of-wood-picture-id1310954867?k=20&m=1310954867&s=612x612&w=0&h=O_KTQ_t29qQjap-dALIkefeRyZF5qvxhaVQzsmQJdbE='/>
+<Projectcards header='FLISA BIL' text='lorem ipsun' imgUrl='https://media.istockphoto.com/photos/american-muscle-car-picture-id108226513?k=20&m=108226513&s=612x612&w=0&h=48EZAv_a22R1NljASmgIXzxSkNnTbgqA-4-v_DYA8IE='/>
+<Projectcards header='IMAGE CHRONICLES' text='lorem ipsun' imgUrl='https://media.istockphoto.com/photos/camera-with-professional-lens-being-held-picture-id155393894?k=20&m=155393894&s=612x612&w=0&h=9E_x3HcZySwDs8zhH1Lvcn0zmlT9dYqF2i92w5Urj34='/>
+<Projectcards header='STRIDSBERGS' text='lorem ipsun' imgUrl='https://media.istockphoto.com/photos/operator-grinding-forging-die-parts-picture-id534924113?k=20&m=534924113&s=612x612&w=0&h=OGp6Bz4LkLfYAms8_U0pEu1PmGG5FG587wQyaWboVDQ='/>
+<Projectcards header='SOLØR 3DESIGN' text='lorem ipsun' imgUrl='https://media.istockphoto.com/photos/interior-modern-kitchen-picture-id547521936?k=20&m=547521936&s=612x612&w=0&h=XL2eNYRv8pMniySjx3Nbc1Yrk6lvLz0gcVaIeP_1M30='/>
+</div>
 
        {/*  <div className="content-margins">
           <h1 className="header mb">Mine hovedprosjekt</h1>
@@ -119,6 +127,7 @@ const StartPage: React.FC = () => {
       <style jsx>
         {`
           .container {
+           
           }
           .btn {
             margin-top: 3rem;
@@ -126,10 +135,16 @@ const StartPage: React.FC = () => {
           .btn:hover {
             cursor: pointer;
           }
+          .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+            grid-row-gap: 3rem
+          }
 
           .header {
-            margin-top: 15rem;
+            margin-top: 5rem;
             font-weight: 100;
+            margin-bottom: 2rem
           }
           .img {
             width: 100%;

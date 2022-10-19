@@ -1,22 +1,42 @@
 import React from 'react'
 import Image from 'next/image'
+import ButtonComponent from '../common/ButtonComponent'
+import Link from 'next/link'
 
-const timber = 'https://media.istockphoto.com/photos/pile-of-boards-in-a-warehouse-stacked-wooden-beams-of-rectangular-picture-id1198231366?k=20&m=1198231366&s=612x612&w=0&h=Pp__P0ETveSTW64mU0fYvHcqEYBvGYp-SFonGtCpWWI='
 
 
-const Projectcards = () => {
+interface CardProps {
+     header: string,
+     text: string,
+     imgUrl: string;
+     link?: string
+}
+const Projectcards = ({header, text, imgUrl, link}:CardProps) => {
 return (
 <>
 <div className='container'>
     <div className='img-container'>
 
-        <Image src={timber} loader={() => timber} layout='fill' objectFit='cover' />
+        <Image src={imgUrl} loader={() => imgUrl} layout='fill' objectFit='cover'  />
         <div className='header-container'>
-            <h1 className='header'>POSTARKIV</h1>
+            <h1 className='card-header'>{header}</h1>
         </div>
+            <div className='text-box'>
+                <p>{text}</p>
+                <Link href={`${link}`}>
+                <p className='button'>LES MER</p>
+                </Link>
+                
+            </div>
     </div>
 </div>
 <style jsx>{`
+.button {
+    margin-top: 1rem
+}
+.button:hover {
+    cursor: pointer
+}
 .container {
  
 }
@@ -26,9 +46,11 @@ return (
     height: 30rem;
     
 }
-.header {
+.card-header {
     
     font-weight: bold;
+    font-size: 1.5rem;
+    padding: .3rem
   
 }
 .header-container {
@@ -37,7 +59,16 @@ return (
     left: 1rem;
     width: 90%;
     padding: 0 .5rem;
-    background: rgba(260, 260, 260, .6)
+    background: rgba(260, 260, 260, .8)
+}
+.text-box {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background: rgba(260, 260, 260, .8);
+    width: 90%;
+    padding:.5rem;
+
 }
 `}
 </style>

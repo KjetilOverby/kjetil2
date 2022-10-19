@@ -81,6 +81,7 @@ const FooterComponent: React.FC<DataProps> = ({ header, data }) => {
           .container {
             background: #3b5564;
             padding: 6rem 3rem;
+            margin-top:5rem
           }
           .content-container {
             margin: 0 20rem;
