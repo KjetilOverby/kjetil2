@@ -21,8 +21,8 @@ return (
         <div className='header-container'>
             <h1 className='card-header'>{header}</h1>
         </div>
+                <p className='text'>{text}</p>
             <div className='text-box'>
-                <p>{text}</p>
                 <Link href={`${link}`}>
                 <p className='button'>LES MER</p>
                 </Link>
@@ -32,18 +32,22 @@ return (
 </div>
 <style jsx>{`
 .button {
-    margin-top: 1rem
+ 
 }
 .button:hover {
     cursor: pointer
 }
 .container {
+   
  
 }
 .img-container {
     position: relative;
     width: 20rem;
     height: 30rem;
+    box-shadow: 5px 5px 20px grey;
+    border: 3px solid #f1f1f1;
+  
     
 }
 .card-header {
@@ -60,6 +64,14 @@ return (
     width: 90%;
     padding: 0 .5rem;
     background: rgba(260, 260, 260, .8)
+}
+.text {
+    position: absolute;
+    bottom: 4rem;
+    left: 1rem;
+    color: white;
+    font-size: 1.5;
+    font-weight: bold
 }
 .text-box {
     position: absolute;
