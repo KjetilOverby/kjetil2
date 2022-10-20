@@ -20,8 +20,9 @@ const Appcards = ({ img, title, text, link, id }: CardProps) => {
           <h3 className="card-header mb">{title}</h3>
           <p className="card-text">{text}</p>
           <div>
-
-          <a href={id} className="btn">LES MER</a>
+  {
+    id && <a href={id} className="btn">LES MER</a>
+  }
           </div>
           {link && <ButtonComponent title="Til nettsiden" link={link} />}
         </div>
