@@ -10,8 +10,6 @@ interface CardProps {
 }
 
 const Appcards = ({ img, title, text, link, id }: CardProps) => {
- 
-  
   return (
     <>
       <div className="container">
@@ -20,9 +18,11 @@ const Appcards = ({ img, title, text, link, id }: CardProps) => {
           <h3 className="card-header mb">{title}</h3>
           <p className="card-text">{text}</p>
           <div>
-  {
-    id && <a href={id} className="btn">LES MER</a>
-  }
+            {id && (
+              <a href={id} className="btn">
+                LES MER
+              </a>
+            )}
           </div>
           {link && <ButtonComponent title="Til nettsiden" link={link} />}
         </div>
@@ -47,6 +47,7 @@ const Appcards = ({ img, title, text, link, id }: CardProps) => {
             background: #fff;
             border-radius: 5px;
             min-height: 30rem;
+            box-shadow: 5px 5px 10px lightgrey;
           }
           .img {
             width: 100%;

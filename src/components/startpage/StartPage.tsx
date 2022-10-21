@@ -26,10 +26,12 @@ const StartPage: React.FC = () => {
             </p>
             <br />
             <p>
-              Jeg har tatt en del kurs hovedsakelig på{" "}
-              <a href="https://ktldesign.net/kurs">Udemy</a>, men har vært innom
+              Jeg har tatt en del kurs hovedsakelig på Udemy, men har vært innom
               Treehouse, Coursera, LinkedIn og uttalige youtube tutorials.
             </p>
+            <Link href="/kurs">
+              <p className="courses">Kurs</p>
+            </Link>
           </div>
           {/* <div className="logo-main-container">
             <div className="react-container">
@@ -93,14 +95,12 @@ const StartPage: React.FC = () => {
             text="Nettside"
             imgUrl="https://media.istockphoto.com/photos/american-muscle-car-picture-id108226513?k=20&m=108226513&s=612x612&w=0&h=48EZAv_a22R1NljASmgIXzxSkNnTbgqA-4-v_DYA8IE="
             btnTitle="LES MER"
-            link='/flisabil'
           />
           <Projectcards
             header="STRIDSBERGS"
             text="Nettside"
             imgUrl="https://media.istockphoto.com/photos/blue-steel-disk-saw-at-construction-site-picture-id1125394932?k=20&m=1125394932&s=612x612&w=0&h=5xvWO6KbAhEaBSeL8xLqbhwNIuxRBDD3rYtlFK8G9zw="
             btnTitle="LES MER"
-            link='/stridsbergs'
           />
           <Projectcards
             header="SOLØR 3DESIGN"
@@ -190,6 +190,13 @@ const StartPage: React.FC = () => {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
             grid-row-gap: 3rem;
+          }
+          .courses {
+            color: rgb(33, 129, 167);
+            margin-top: 1rem;
+          }
+          .courses:hover {
+            cursor: pointer;
           }
 
           .header {
