@@ -79,7 +79,7 @@ const FooterComponent: React.FC<DataProps> = ({ header, data }) => {
       <style jsx>
         {`
           .container {
-            background: #3b5564;
+            background: rgba(20,20,20);
             padding: 6rem 3rem;
             margin-top:5rem
           }
@@ -97,11 +97,13 @@ const FooterComponent: React.FC<DataProps> = ({ header, data }) => {
             color: lightgrey;
             margin-bottom: 0.5rem;
             font-weight: 400;
+            font-size: 1rem
           }
           .footer-text {
             color: lightgrey;
             margin-bottom: 0.5rem;
             font-weight: 100;
+            font-size: .8rem
           }
           @media only screen and (max-width: 800px) {
             .content-container {

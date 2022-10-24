@@ -95,12 +95,14 @@ const StartPage: React.FC = () => {
             text="Nettside"
             imgUrl="https://media.istockphoto.com/photos/american-muscle-car-picture-id108226513?k=20&m=108226513&s=612x612&w=0&h=48EZAv_a22R1NljASmgIXzxSkNnTbgqA-4-v_DYA8IE="
             btnTitle="LES MER"
+            link='/flisabil'
           />
           <Projectcards
             header="STRIDSBERGS"
             text="Nettside"
             imgUrl="https://media.istockphoto.com/photos/blue-steel-disk-saw-at-construction-site-picture-id1125394932?k=20&m=1125394932&s=612x612&w=0&h=5xvWO6KbAhEaBSeL8xLqbhwNIuxRBDD3rYtlFK8G9zw="
             btnTitle="LES MER"
+            link='/stridsbergs'
           />
           <Projectcards
             header="SOLØR 3DESIGN"
