@@ -2,10 +2,24 @@ import React from "react";
 import udemy from "../../data/udemydata";
 import Image from "next/image";
 import Link from "next/link";
+import MarginLayout from "../common/MarginLayout";
 
 const KursMainPage = () => {
   return (
     <>
+      <MarginLayout>
+        <>
+          <h1 className="header mbl">Nettkurs</h1>
+          <p className="mbl">
+            Jeg har i hovedsak brukt Udemy.com som hovedkilde til å lære å kode.
+            Men jeg har vært innom Treehouse, Coursera, linkedIN. Jeg har 57
+            Udemy kurs. De fleste kursene er ikke fullført, det er fordi jeg var
+            bare ute etter spesielle ting i kursene for å fordype kunnskap i
+            spesielle felt. Det meste av det som ikke er fullført er noe jeg kan
+            ganske godt. Klikk på kursene for å få mere info.
+          </p>
+        </>
+      </MarginLayout>
       <div className="content-margins img-container">
         {udemy.map((item) => {
           return (
