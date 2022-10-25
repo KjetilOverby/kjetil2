@@ -1,7 +1,15 @@
 import React from "react";
 import HeaderComponent from "../HeaderComponent";
+import Image from "next/image";
 
 const PostarkivMain: React.FC = () => {
+  const bladpost =
+    "https://lh3.googleusercontent.com/pw/AL9nZEV9u4VLP5w997IVRtH6r5YCD6A8IrprNXmBCRQrNLe-jObuIWeHAMgkkaCUAhFq6nTWAmYVRQkp8uycwxo_KxeVObvEOmSQzCMP5GY7Mcdm6L8fxso1TRpL9jTq3bZJ3emLmTZYSeRVFoVbkYjdap60=w1440-h1080-no?authuser=0";
+  const deling =
+    "https://lh3.googleusercontent.com/pw/AL9nZEWBqTfqaAIOQeZNn37ojtHD5GF-Jrp3cPLwsP_ZsH33n6rDHyZNCa3ufQs0GBv5Cd_DmhJBzVPsigCXOr681hgoz3Q_tNSfkvbVnaVUT_Bw-MFkD9Cr8O13oa91UznNy33Uh_kh4HRLfLkGHvi_PX9c=s791-no?authuser=0";
+
+  const illustrasjon =
+    "https://lh3.googleusercontent.com/pw/AL9nZEXo1AUULPvoNxwU1a1KNUlxMVPgOS12u1mAYxDbu6AYwdt2MBpmt_XAgmYqXSyOc9BkU_5zqvx41Dtu5BpAS7ScPxOn2b4NQWvocuYh7MVxLvzAHfSOKqAOVhq0HOZcYnejt9Wl55BqDKRKErrN-b6U=w1170-h729-no?authuser=0";
   return (
     <>
       <div className="container">
@@ -21,19 +29,27 @@ const PostarkivMain: React.FC = () => {
                 ha andre dimensjoner så må posten byttes med en ny.
               </p>
               <div className="img-deling-container">
-                <img
-                  className="img"
-                  src="https://lh3.googleusercontent.com/pw/AL9nZEWBqTfqaAIOQeZNn37ojtHD5GF-Jrp3cPLwsP_ZsH33n6rDHyZNCa3ufQs0GBv5Cd_DmhJBzVPsigCXOr681hgoz3Q_tNSfkvbVnaVUT_Bw-MFkD9Cr8O13oa91UznNy33Uh_kh4HRLfLkGHvi_PX9c=s791-no?authuser=0"
-                  alt=""
+                <Image
+                  alt="image"
+                  src={deling}
+                  loader={() => deling}
+                  layout="responsive"
+                  objectFit="cover"
+                  width="100"
+                  height="100"
                 />
                 <p className="img-text">Eksempel på deling av en stokk.</p>
               </div>
             </div>
             <div>
-              <img
-                className="img"
-                src="https://lh3.googleusercontent.com/pw/AL9nZEV9u4VLP5w997IVRtH6r5YCD6A8IrprNXmBCRQrNLe-jObuIWeHAMgkkaCUAhFq6nTWAmYVRQkp8uycwxo_KxeVObvEOmSQzCMP5GY7Mcdm6L8fxso1TRpL9jTq3bZJ3emLmTZYSeRVFoVbkYjdap60=w1440-h1080-no?authuser=0"
-                alt=""
+              <Image
+                alt="image"
+                src={bladpost}
+                loader={() => bladpost}
+                layout="responsive"
+                objectFit="cover"
+                width="100"
+                height="70"
               />
               <p className="img-text">
                 Her er en post som sitter i saga. Saga har 2 akslinger med 2
@@ -59,10 +75,14 @@ const PostarkivMain: React.FC = () => {
             mutterne stikke innen eller utenfor hylsa.
           </p>
           <div className="img-container">
-            <img
-              className="img"
-              src="https://lh3.googleusercontent.com/pw/AL9nZEXo1AUULPvoNxwU1a1KNUlxMVPgOS12u1mAYxDbu6AYwdt2MBpmt_XAgmYqXSyOc9BkU_5zqvx41Dtu5BpAS7ScPxOn2b4NQWvocuYh7MVxLvzAHfSOKqAOVhq0HOZcYnejt9Wl55BqDKRKErrN-b6U=w1170-h729-no?authuser=0"
-              alt=""
+            <Image
+              alt="image"
+              src={illustrasjon}
+              loader={() => illustrasjon}
+              layout="responsive"
+              objectFit="cover"
+              width="100"
+              height="70"
             />
           </div>
         </div>

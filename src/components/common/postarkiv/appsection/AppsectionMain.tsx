@@ -1,8 +1,11 @@
 import React from "react";
 import MarginLayout from "../../MarginLayout";
 import Appcards from "./Appcards";
+import Image from "next/image";
 
 const AppsectionMain: React.FC = () => {
+  const bladpost =
+    "https://lh3.googleusercontent.com/pw/AL9nZEWQ9tNUQethMFxI6l7__A6yY0NV09pJCNNHOad8oCa_oBoWPgX6O3yCbexjJkd71km_uHHAx9kStPeYR3uVBM087YWVptOEnRIuYd1XxLbU_-9uEimfbGZv20vXgBmolOTbw9kONZMl8pDYjE5WGE82=w1440-h1080-no?authuser=0";
   return (
     <>
       <div className="container">
@@ -28,10 +31,14 @@ const AppsectionMain: React.FC = () => {
                 </p>
               </div>
               <div>
-                <img
-                  className="img"
-                  src="https://lh3.googleusercontent.com/pw/AL9nZEWQ9tNUQethMFxI6l7__A6yY0NV09pJCNNHOad8oCa_oBoWPgX6O3yCbexjJkd71km_uHHAx9kStPeYR3uVBM087YWVptOEnRIuYd1XxLbU_-9uEimfbGZv20vXgBmolOTbw9kONZMl8pDYjE5WGE82=w1440-h1080-no?authuser=0"
-                  alt=""
+                <Image
+                  alt="image"
+                  src={bladpost}
+                  loader={() => bladpost}
+                  layout="responsive"
+                  objectFit="cover"
+                  width="100"
+                  height="70"
                 />
               </div>
             </div>
@@ -43,21 +50,21 @@ const AppsectionMain: React.FC = () => {
                 img="https://lh3.googleusercontent.com/pw/AL9nZEV5Dj5Ae_ckIm7eaFFDa8U7Xl9ynJdNc5xp7bZDNJVqB0CT4WQ80Uo46k8MDdiyxVSL3I0SA-LA9Z5uX7i96lQ7mc_RWTav4K8xBkVLXyhCHr_AnwGdPzbPIQ2SIjt4MgsKL4XIxkyqdPNJ7EkS3r2h=w1686-h1024-no?authuser=0"
                 title="Microsoft Excel"
                 text="Det første utregningsprogrammet ble laget med Microsoft Excel i april 2016"
-                id='#excel'
+                id="#excel"
               />
               <Appcards
                 img="https://lh3.googleusercontent.com/pw/AL9nZEWkHPPA-3ew-ejj7jbTzggXqpvkFnt9IsGv9uCkIAg2OHt2wSSqLI71w-wV7xDKwJ1eMxsar3d24IM5JegFEeLRrlFHCNs1FFTyH6BB8wsnxSJE8jbnNFP3Q21wigbKmQJeBrGOOab6wWiAVEwY2rwr=w1920-h1080-no?authuser=0"
                 title="Postkalkulator"
                 text="Webapp ble utviklet. Denne har ikke database og kan ikke lagre data. Desember 2019"
                 link="https://mkv-calculator-awcsqbdb7.vercel.app/"
-                id='#postkalkulator'
+                id="#postkalkulator"
               />
               <Appcards
                 img="https://lh3.googleusercontent.com/pw/AL9nZEW4eNrcV7T6qsgrN06c-_Zy0KU26svbIX9bOUIardKNKZNC9mo0Y3pgYSYgIgCp7e6wHCqGE9_LOafN5DDspRj65mbjkbOAsNmJ8f-Uo_4OD4IbRMnFb2suHoy13bl8JtwKkP8J1Vp8Z9kYRuVd48tr=w1920-h1080-no?authuser=0"
                 title="MKV Postarkiv"
                 text="En ny versjon ble laget. Denne har database, inlogging og er responsiv."
                 link="https://mkv-calculator-mobile.vercel.app/"
-                id='#postarkiv'
+                id="#postarkiv"
               />
 
               <Appcards
@@ -65,7 +72,7 @@ const AppsectionMain: React.FC = () => {
                 title="Postarkiv (skurliste)"
                 text="Ble lagd først som kun skurliste man kunne velge fra. Utviklet seg etterhvert til en fullverdig postkalkulator app."
                 link="https://postarkiv.vercel.app/"
-                id='#postarkiv2'
+                id="#postarkiv2"
               />
             </div>
           </div>
