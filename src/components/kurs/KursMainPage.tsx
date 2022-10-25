@@ -15,8 +15,8 @@ const KursMainPage = () => {
                   <Image
                     alt="course-img"
                     layout="intrinsic"
-                    width="200"
-                    height="200"
+                    width="250"
+                    height="300"
                     objectFit="cover"
                     src={item.img}
                     loader={() => item.img}
@@ -31,7 +31,7 @@ const KursMainPage = () => {
         {`
           .img-container {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
             place-items: center;
             grid-gap: 4rem;
           }

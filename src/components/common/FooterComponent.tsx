@@ -71,7 +71,9 @@ const FooterComponent: React.FC<DataProps> = ({ header, data }) => {
             <h3 className="footer-header">{header}</h3>
 
             {data.map((item) => (
-              <p className="footer-text">{item.title}</p>
+              <p key={item.title} className="footer-text">
+                {item.title}
+              </p>
             ))}
           </div>
         </div>
@@ -79,9 +81,9 @@ const FooterComponent: React.FC<DataProps> = ({ header, data }) => {
       <style jsx>
         {`
           .container {
-            background: rgba(20,20,20);
+            background: rgba(20, 20, 20);
             padding: 6rem 3rem;
-            margin-top:5rem
+            margin-top: 5rem;
           }
           .content-container {
             margin: 0 20rem;
@@ -97,13 +99,13 @@ const FooterComponent: React.FC<DataProps> = ({ header, data }) => {
             color: lightgrey;
             margin-bottom: 0.5rem;
             font-weight: 400;
-            font-size: 1rem
+            font-size: 1rem;
           }
           .footer-text {
             color: lightgrey;
             margin-bottom: 0.5rem;
             font-weight: 100;
-            font-size: .8rem
+            font-size: 0.8rem;
           }
           @media only screen and (max-width: 800px) {
             .content-container {
