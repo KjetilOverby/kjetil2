@@ -7,9 +7,10 @@ interface CardProps {
   text: string;
   link?: string;
   id?: string;
+  github?:string
 }
 
-const Appcards = ({ img, title, text, link, id }: CardProps) => {
+const Appcards = ({ img, title, text, link, id, github }: CardProps) => {
   return (
     <>
       <div className="container">
@@ -17,7 +18,7 @@ const Appcards = ({ img, title, text, link, id }: CardProps) => {
         <div className="text-container">
           <h3 className="card-header mb">{title}</h3>
           <p className="card-text">{text}</p>
-          <div>
+          <div className="mt">
             {id && (
               <a href={id} className="btn">
                 LES MER
@@ -25,6 +26,9 @@ const Appcards = ({ img, title, text, link, id }: CardProps) => {
             )}
           </div>
           {link && <ButtonComponent title="Til nettsiden" link={link} />}
+        </div>
+        <div>
+          {github && <a href={github}>Github</a>}
         </div>
       </div>
       <style jsx>

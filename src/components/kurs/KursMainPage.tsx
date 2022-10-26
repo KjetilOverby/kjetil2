@@ -2,12 +2,11 @@ import React from "react";
 import udemy from "../../data/udemydata";
 import Image from "next/image";
 import Link from "next/link";
-import MarginLayout from "../common/MarginLayout";
 
 const KursMainPage = () => {
   return (
     <>
-      <MarginLayout>
+      
         <>
           <h1 className="header mbl">Nettkurs</h1>
           <p className="mbl">
@@ -19,7 +18,7 @@ const KursMainPage = () => {
             ganske godt. Klikk på kursene for å få mere info.
           </p>
         </>
-      </MarginLayout>
+     
       <div className="content-margins img-container">
         {udemy.map((item) => {
           return (
@@ -40,6 +39,7 @@ const KursMainPage = () => {
             </>
           );
         })}
+      
       </div>
       <style jsx>
         {`

@@ -177,7 +177,7 @@ const Appdescription = () => {
             layout="responsive"
             objectFit="cover"
             width='100'
-            height='60'
+            height='50'
           />
               <p>
                 Jeg hadde lenge tenkt å lage et system der man bare kan klikke
