@@ -3,6 +3,7 @@ import { GrMail } from "react-icons/gr";
 import { FaPhoneAlt } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 import { AiFillFacebook } from "react-icons/ai";
+import Link from 'next/link'
 
 interface data {
   title: string;
@@ -43,6 +44,8 @@ const FooterComponent: React.FC<DataProps> = ({ header, data }) => {
               />
               <p className="footer-text"> ktldesign80@gmail.com</p>
             </div>
+            <Link href='https://github.com/KjetilOverby'>
+            
             <div className="icon-text-container">
               <BsGithub
                 style={{
@@ -54,6 +57,7 @@ const FooterComponent: React.FC<DataProps> = ({ header, data }) => {
               />
               <p className="footer-text"> Github</p>
             </div>
+            </Link>
             <div className="icon-text-container">
               <AiFillFacebook
                 style={{
@@ -93,6 +97,9 @@ const FooterComponent: React.FC<DataProps> = ({ header, data }) => {
           .icon-text-container {
             display: flex;
             vertical-align: "middle";
+          }
+          .icon-text-container:hover {
+            cursor: pointer
           }
           .footer-header {
             text-transform: uppercase;

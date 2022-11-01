@@ -68,6 +68,7 @@ const AppsectionTools = () => {
                 text="Er ikke helt fornøyd med tidligere apper så jeg bygger enda en app der menyen er på siden."
                 link="https://sliperi.vercel.app/"
                 id='#verktoyregister2'
+                github='https://github.com/KjetilOverby/sliperi'
               />
             </div>
           </div>

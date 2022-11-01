@@ -1,5 +1,8 @@
 import React from "react";
 import ButtonComponent from "../../ButtonComponent";
+import { BsGithub } from "react-icons/bs";
+import Link from 'next/link'
+
 
 interface CardProps {
   img: string;
@@ -27,9 +30,12 @@ const Appcards = ({ img, title, text, link, id, github }: CardProps) => {
           </div>
           {link && <ButtonComponent title="Til nettsiden" link={link} />}
         </div>
-        <div>
-          {github && <a href={github}>Github</a>}
+        <Link href={`${github}`}>
+        <div className="github-container">
+          
+          {github && <div><BsGithub style={{color: 'dodgerblue', fontSize: '1.5rem', marginRight: '.5rem'}} /> Github</div>}
         </div>
+        </Link>
       </div>
       <style jsx>
         {`
@@ -52,6 +58,12 @@ const Appcards = ({ img, title, text, link, id, github }: CardProps) => {
             border-radius: 5px;
             min-height: 30rem;
             box-shadow: 5px 5px 10px lightgrey;
+          }
+          .github-container {
+            margin-left: .5rem
+          }
+          .github-container:hover {
+            cursor: pointer
           }
           .img {
             width: 100%;

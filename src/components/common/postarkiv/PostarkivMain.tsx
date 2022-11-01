@@ -82,7 +82,7 @@ const PostarkivMain: React.FC = () => {
               layout="responsive"
               objectFit="cover"
               width="100"
-              height="70"
+              height="65"
             />
           </div>
         </div>

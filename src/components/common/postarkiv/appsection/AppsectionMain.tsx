@@ -58,6 +58,7 @@ const AppsectionMain: React.FC = () => {
                 text="Webapp ble utviklet. Denne har ikke database og kan ikke lagre data. Desember 2019"
                 link="https://mkv-calculator-awcsqbdb7.vercel.app/"
                 id="#postkalkulator"
+                github='https://github.com/KjetilOverby/mkv-calculator'
               />
               <Appcards
                 img="https://lh3.googleusercontent.com/pw/AL9nZEW4eNrcV7T6qsgrN06c-_Zy0KU26svbIX9bOUIardKNKZNC9mo0Y3pgYSYgIgCp7e6wHCqGE9_LOafN5DDspRj65mbjkbOAsNmJ8f-Uo_4OD4IbRMnFb2suHoy13bl8JtwKkP8J1Vp8Z9kYRuVd48tr=w1920-h1080-no?authuser=0"
@@ -65,6 +66,7 @@ const AppsectionMain: React.FC = () => {
                 text="En ny versjon ble laget. Denne har database, inlogging og er responsiv."
                 link="https://mkv-calculator-mobile.vercel.app/"
                 id="#postarkiv"
+                github='https://github.com/KjetilOverby/mobile-mkv-calculator'
               />
 
               <Appcards
@@ -73,6 +75,7 @@ const AppsectionMain: React.FC = () => {
                 text="Ble lagd først som kun skurliste man kunne velge fra. Utviklet seg etterhvert til en fullverdig postkalkulator app."
                 link="https://postarkiv.vercel.app/"
                 id="#postarkiv2"
+                github='https://github.com/KjetilOverby/postarkiv'
               />
             </div>
           </div>

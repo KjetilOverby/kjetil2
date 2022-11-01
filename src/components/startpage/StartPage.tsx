@@ -38,6 +38,7 @@ const StartPage: React.FC = () => {
           style={{ borderBottom: 0, borderColor: "grey", marginTop: "5rem" }}
         />
         <h1 className="header">PROSJEKTER</h1>
+        <p className="mb">Det er blitt mange prosjekter, her er noen av hovedprosjektene.</p>
         <div className="card-container">
           <Projectcards
             header="POSTARKIV"
