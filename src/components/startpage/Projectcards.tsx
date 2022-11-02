@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import ButtonComponent from "../common/ButtonComponent";
 import Link from "next/link";
+import { BsGithub } from "react-icons/bs";
 
 interface CardProps {
   header: string;
@@ -9,8 +10,16 @@ interface CardProps {
   imgUrl: string;
   link?: string;
   btnTitle: string;
+  github?: string;
 }
-const Projectcards = ({ header, text, imgUrl, link, btnTitle }: CardProps) => {
+const Projectcards = ({
+  header,
+  text,
+  imgUrl,
+  link,
+  btnTitle,
+  github,
+}: CardProps) => {
   return (
     <>
       <div className="container">
@@ -25,6 +34,21 @@ const Projectcards = ({ header, text, imgUrl, link, btnTitle }: CardProps) => {
           <div className="header-container">
             <h1 className="card-header">{header}</h1>
           </div>
+          {github && (
+            <Link href={`${github}`}>
+              <div className="github-container">
+                <BsGithub
+                  style={{
+                    position: "absolute",
+                    color: "#fff",
+                    bottom: "6rem",
+                    left: "1rem",
+                    fontSize: "2rem",
+                  }}
+                />
+              </div>
+            </Link>
+          )}
           <p className="text">{text}</p>
           <div className="text-box">
             <Link href={`${link}`}>
@@ -53,6 +77,9 @@ const Projectcards = ({ header, text, imgUrl, link, btnTitle }: CardProps) => {
             font-weight: bold;
             font-size: 1.5rem;
             padding: 0.3rem;
+          }
+          .github-container:hover {
+            cursor: pointer;
           }
           .header-container {
             position: absolute;

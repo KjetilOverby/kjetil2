@@ -37,8 +37,18 @@ const StartPage: React.FC = () => {
         <hr
           style={{ borderBottom: 0, borderColor: "grey", marginTop: "5rem" }}
         />
-        <h1 className="header">PROSJEKTER</h1>
-        <p className="mb">Det er blitt mange prosjekter, her er noen av hovedprosjektene.</p>
+        <div className="text-container">
+          <h1 className="header">PROSJEKTER</h1>
+
+          <p className="mb">
+            Det er blitt mange prosjekter, her er noen av hovedprosjektene.
+            Stridsbergs og Solør 3Design foreløpig ikke helt ferdig og usikkert
+            om de skal publiseres på deres domene. Jeg har Jeg har også bygd
+            flere andre nettsider med Bootstrap og Material Ui, men akkurat nå
+            skriver jeg ren Css og bruker Css Grid for det meste til responsiv
+            design.
+          </p>
+        </div>
         <div className="card-container">
           <Projectcards
             header="POSTARKIV"
@@ -60,6 +70,7 @@ const StartPage: React.FC = () => {
             imgUrl="https://media.istockphoto.com/photos/camera-with-professional-lens-being-held-picture-id155393894?k=20&m=155393894&s=612x612&w=0&h=9E_x3HcZySwDs8zhH1Lvcn0zmlT9dYqF2i92w5Urj34="
             btnTitle="TIL NETTSIDEN"
             link="https://betsyphotos.vercel.app/"
+            github="https://github.com/KjetilOverby/betsyphotos"
           />
           <Projectcards
             header="FLISA BIL"
@@ -79,8 +90,9 @@ const StartPage: React.FC = () => {
             header="SOLØR 3DESIGN"
             text="Nettside"
             imgUrl="https://media.istockphoto.com/photos/interior-modern-kitchen-picture-id547521936?k=20&m=547521936&s=612x612&w=0&h=XL2eNYRv8pMniySjx3Nbc1Yrk6lvLz0gcVaIeP_1M30="
-            btnTitle="LES MER"
+            btnTitle="TIL NETTSIDEN"
             link="https://solor3design.vercel.app/"
+            github="https://github.com/KjetilOverby/solor3design"
           />
         </div>
       </div>

@@ -1,8 +1,8 @@
 import React from "react";
 import ButtonComponent from "../../ButtonComponent";
 import { BsGithub } from "react-icons/bs";
-import Link from 'next/link'
-
+import Link from "next/link";
+import Image from "next/image";
 
 interface CardProps {
   img: string;
@@ -10,14 +10,25 @@ interface CardProps {
   text: string;
   link?: string;
   id?: string;
-  github?:string
+  github?: string;
 }
 
 const Appcards = ({ img, title, text, link, id, github }: CardProps) => {
   return (
     <>
       <div className="container">
-        <img className="img" src={img} alt="" />
+        <div style={{ position: "relative", height: "16rem" }}>
+          <Image
+            className="img"
+            src={img}
+            loader={() => img}
+            alt="Image"
+            layout="responsive"
+            height="55"
+            width="100"
+            objectFit="cover"
+          />
+        </div>
         <div className="text-container">
           <h3 className="card-header mb">{title}</h3>
           <p className="card-text">{text}</p>
@@ -31,10 +42,20 @@ const Appcards = ({ img, title, text, link, id, github }: CardProps) => {
           {link && <ButtonComponent title="Til nettsiden" link={link} />}
         </div>
         <Link href={`${github}`}>
-        <div className="github-container">
-          
-          {github && <div><BsGithub style={{color: 'dodgerblue', fontSize: '1.5rem', marginRight: '.5rem'}} /> Github</div>}
-        </div>
+          <div className="github-container">
+            {github && (
+              <div>
+                <BsGithub
+                  style={{
+                    color: "dodgerblue",
+                    fontSize: "1.5rem",
+                    marginRight: ".5rem",
+                  }}
+                />{" "}
+                Github
+              </div>
+            )}
+          </div>
         </Link>
       </div>
       <style jsx>
@@ -56,14 +77,14 @@ const Appcards = ({ img, title, text, link, id, github }: CardProps) => {
           .container {
             background: #fff;
             border-radius: 5px;
-            min-height: 30rem;
+            min-height: 35rem;
             box-shadow: 5px 5px 10px lightgrey;
           }
           .github-container {
-            margin-left: .5rem
+            margin-left: 0.5rem;
           }
           .github-container:hover {
-            cursor: pointer
+            cursor: pointer;
           }
           .img {
             width: 100%;
