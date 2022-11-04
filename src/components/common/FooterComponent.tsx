@@ -3,7 +3,7 @@ import { GrMail } from "react-icons/gr";
 import { FaPhoneAlt } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 import { AiFillFacebook } from "react-icons/ai";
-import Link from 'next/link'
+import Link from "next/link";
 
 interface data {
   title: string;
@@ -44,19 +44,18 @@ const FooterComponent: React.FC<DataProps> = ({ header, data }) => {
               />
               <p className="footer-text"> ktldesign80@gmail.com</p>
             </div>
-            <Link href='https://github.com/KjetilOverby'>
-            
-            <div className="icon-text-container">
-              <BsGithub
-                style={{
-                  color: "lightgrey",
-                  marginRight: ".5rem",
-                  fontSize: "1.1rem",
-                  marginTop: ".1rem",
-                }}
-              />
-              <p className="footer-text"> Github</p>
-            </div>
+            <Link href="https://github.com/KjetilOverby">
+              <div className="icon-text-container">
+                <BsGithub
+                  style={{
+                    color: "lightgrey",
+                    marginRight: ".5rem",
+                    fontSize: "1.1rem",
+                    marginTop: ".1rem",
+                  }}
+                />
+                <p className="footer-text"> Github</p>
+              </div>
             </Link>
             <div className="icon-text-container">
               <AiFillFacebook
@@ -99,7 +98,7 @@ const FooterComponent: React.FC<DataProps> = ({ header, data }) => {
             vertical-align: "middle";
           }
           .icon-text-container:hover {
-            cursor: pointer
+            cursor: pointer;
           }
           .footer-header {
             text-transform: uppercase;
@@ -122,6 +121,11 @@ const FooterComponent: React.FC<DataProps> = ({ header, data }) => {
               grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
               grid-gap: 5rem;
               margin: 0;
+            }
+          }
+          @media only screen and (max-width: 1400px) {
+            .content-container {
+              margin: 0 0rem;
             }
           }
         `}
